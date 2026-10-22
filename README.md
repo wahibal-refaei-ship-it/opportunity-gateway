@@ -9,11 +9,12 @@
 ## المستودع وحالة النقل — 22 أكتوبر 2026
 
 - **الوجهة الجديدة:** [wahibal-refaei-ship-it/opportunity-gateway](https://github.com/wahibal-refaei-ship-it/opportunity-gateway).
-- **حالة النقل:** **جاهز للرفع؛ لم يُرفع بعد**.
+- **حالة النقل:** رُفعت ملفات المشروع الـ95 بنجاح، وتحقق تطابق بصمات جميع الملفات مع النسخة المحفوظة.
 - **حالة GitHub Pages:** **غير مفعّل بعد**.
-- **الفرع المخطط للرفع:** `main`؛ المستودع الهدف ما زال فارغًا.
+- **الفرع:** `main`.
 - **مصدر النسخة المهيأة:** لقطة المصدر عند commit `45c6f05efff1599892306e5ec3cd3e15903fc20e`، مع تحديث ملفَي توثيق الوجهة والحالة فقط.
-- **المتطلب المتبقي للرفع:** الاتصال الحالي يملك صلاحية القراءة فقط على المستودع الهدف؛ يلزم وصول مصرح به للكتابة إليه.
+- **جاهزية النشر:** التطبيق ثابت وجاهز للنشر من `main` والمجلد `/ (root)`؛ يحتوي الجذر على `index.html` و`.nojekyll`.
+- **الخطوة المتبقية للنشر:** من `Settings → Pages` اختر `Deploy from a branch` ثم `main` و`/ (root)` واضغط `Save`.
 - لا يوجد رابط استضافة منشور للوجهة الجديدة بعد. تفاصيل الحالة والخطوات المتبقية في `DEPLOYMENT-RECORD.md`.
 
 ### تاريخ الفحوص السابقة
@@ -114,9 +115,11 @@ node scripts/weekly-report.mjs
 ## Repository and Transfer Status — 22 October 2026
 
 - **New destination:** [wahibal-refaei-ship-it/opportunity-gateway](https://github.com/wahibal-refaei-ship-it/opportunity-gateway).
-- **Transfer status:** Ready to upload; not uploaded yet.
+- **Transfer status:** All 95 project files were uploaded successfully; every uploaded Git blob matched the prepared local snapshot.
 - **GitHub Pages:** Not enabled yet. No published site URL is available for the new destination.
-- **Planned branch:** `main`. The destination repository is still empty, and the current connection has read access only.
+- **Branch:** `main`.
+- **Deployment readiness:** The static application is ready for GitHub Pages from `main` and `/ (root)`, with `index.html`, `.nojekyll`, and all required local assets present.
+- **Remaining publishing step:** In `Settings → Pages`, choose `Deploy from a branch`, select `main` and `/ (root)`, then select `Save` and verify deployment.
 - **Prepared source:** Commit `45c6f05efff1599892306e5ec3cd3e15903fc20e`, with only the two destination/status documentation files updated locally.
 
 The upload, deployment, and browser checks recorded on 21 October 2026 apply to the previous version in `assemalqudami-maker/opportunity-gateway`. That repository was subsequently deleted with the user's confirmation. Those results remain historical evidence in `DEPLOYMENT-RECORD.md`; they do not establish deployment or testing at the new destination.
