@@ -1,0 +1,17 @@
+Test ID: DEPLOY-01
+Date: 2026-10-21
+Scope: Deployment readiness on GitHub Pages
+Result: PASS (Readiness verified; publication awaiting user account authentication)
+
+Details:
+1. Relative path inspection across all production files:
+   - `index.html`: `assets/css/styles.css`, `assets/icons/favicon.svg`, `manifest.webmanifest`, `assets/js/list.js` -> Relative.
+   - `detail.html`: same relative paths + `assets/js/detail.js`.
+   - `favorites.html`: same relative paths + `assets/js/favorites.js`.
+   - `about.html`: same relative paths + inline module importing relative modules.
+   - `styles.css`: `@font-face` uses `../fonts/cairo-arabic.woff2` and `../fonts/cairo-latin.woff2`.
+   - `service-worker.js`: uses `./` relative precaching URLs.
+   - `manifest.webmanifest`: uses `./index.html` and `./` scope.
+2. Static configuration:
+   - `.nojekyll` created in root to bypass Jekyll build step.
+3. Target repository: `opportunity-gateway2` (independent repository).

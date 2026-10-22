@@ -1,0 +1,16 @@
+Test ID: DETAIL-01
+Date: 2026-10-21
+Scope: Detail page rendering of all canonical fields
+Result: PASS
+
+Details:
+1. Checked opp-001 (Open Doors Russia) and course-001 (CS50x).
+2. All fields rendered via safe DOM (textContent):
+   - Title, Provider, Country, Study levels, Duration/Format
+   - Summary, Description, Eligibility, Requirements checklist, Benefits/Funding
+   - Closes_at and note
+   - Official source URL and Application URL
+   - Automated source check date: 2026-10-21
+   - Human review status: 'pending' (displayed honestly as pending, no false reviewer name)
+3. Direct navigation with `detail.html?id=opp-001` works smoothly.
+4. Related opportunities section loads 2 related opportunities matching same type from canonical data.

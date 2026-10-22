@@ -1,0 +1,17 @@
+Test ID: SEARCH-01
+Date: 2026-10-21
+Scope: Arabic and English search with normalization
+Result: PASS
+
+Details:
+1. Search across fields: title, provider, country, fields, summary, description.
+2. Arabic normalization:
+   - "مِنْحَة أوبن" -> normalized to "منحه اوبن"
+   - "منحة اوبن" -> normalized to "منحه اوبن"
+   - Match found: opp-001 (منحة Open Doors الروسية).
+   - Displayed text retains original spelling and diacritics without distortion.
+3. English search:
+   - "Harvard" -> matches course-001, course-002, course-003.
+   - "Oxford" -> matches opp-007 (Clarendon).
+4. Non-matching term:
+   - "xyz99notfound" -> 0 matches, empty state displayed correctly with reset button.

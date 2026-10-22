@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self';">
+  <meta name="theme-color" content="#55318A">
+  <meta name="description" content="تفاصيل الفرصة ومعلومات الأهلية والمواعيد وروابط التقديم والمصادر الرسمية.">
+  <title>تفاصيل الفرصة | بوّابة الفرص ٢</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/detail.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
+
+  <div id="offline-banner" class="offline-banner hidden" role="status" aria-live="polite">
+    <span data-ar="أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية." data-en="You are offline. An internet connection is needed for official links.">أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية.</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="بوابة الفرص — الرئيسية" data-label-ar="بوابة الفرص — الرئيسية" data-label-en="Opportunity Gateway — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M17 31V19a3 3 0 0 1 6 0v12" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="29.5" cy="9.5" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="بداية جديدة لطموحك" data-en="A new beginning for your ambition">بداية جديدة لطموحك</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي" data-label-ar="التنقل الرئيسي" data-label-en="Main navigation">
+        <a href="index.html" class="nav-link">
+          <span data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <span data-ar="المفضلة" data-en="Saved">المفضلة</span>
+          <span id="saved-count" class="saved-count">0</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span data-ar="عن البوابة" data-en="About">عن البوابة</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="language-button" class="language-button" type="button" aria-label="Switch to English" lang="en">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/>
+          </svg>
+          <span>English</span>
+        </button>
+
+        <button id="menu-button" class="icon-button menu-button" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="فتح القائمة" data-label-ar="فتح القائمة" data-label-en="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="التنقل على الهاتف" data-label-ar="التنقل على الهاتف" data-label-en="Mobile navigation">
+      <a href="index.html" class="nav-link">
+        <span data-ar="اكتشف الفرص" data-en="Explore opportunities">اكتشف الفرص</span>
+      </a>
+      <a href="favorites.html" class="nav-link">
+        <span data-ar="المفضلة" data-en="Saved opportunities">المفضلة</span>
+      </a>
+      <a href="about.html" class="nav-link">
+        <span data-ar="عن البوابة" data-en="About the gateway">عن البوابة</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="container detail-page" id="detail-container">
+      <div id="detail-content"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13M17 31V19a3 3 0 0 1 6 0v12M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="30" cy="9" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="لكل طموح، بداية." data-en="Every ambition has a beginning.">لكل طموح، بداية.</small>
+        </span>
+      </a>
+
+      <nav class="footer-nav" aria-label="روابط التذييل" data-label-ar="روابط التذييل" data-label-en="Footer navigation">
+        <a href="index.html" data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</a>
+        <a href="favorites.html" data-ar="المفضلة" data-en="Saved">المفضلة</a>
+        <a href="about.html" data-ar="عن البوابة" data-en="About">عن البوابة</a>
+      </nav>
+
+      <p class="footer-motto">
+        <span data-ar="اصنع خطوتك التالية." data-en="Make your next move.">اصنع خطوتك التالية.</span>
+        <span aria-hidden="true">✦</span>
+      </p>
+    </div>
+
+    <div class="container footer-bottom">
+      <span data-ar="بوّابة الفرص · النسخة الثانية (2026)" data-en="Opportunity Gateway · Second Edition (2026)">بوّابة الفرص · النسخة الثانية (2026)</span>
+      <span data-ar="المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط." data-en="Official sources are the final reference for details, deadlines, and terms.">المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط.</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

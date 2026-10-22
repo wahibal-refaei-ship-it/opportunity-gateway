@@ -1,0 +1,18 @@
+Test ID: COURSE-01
+Date: 2026-10-21
+Scope: Course details — distinction between Free Study and Free Certificate
+Result: PASS
+
+Details:
+1. CS50x (course-001):
+   - Free access: true (free study confirmed)
+   - Certificate status: 'free' (Harvard CS50 certificate)
+   - edX paid certificate is distinct and not conflated with free CS50 certificate.
+2. Cisco Introduction to Cybersecurity (course-006):
+   - Free access: true (free study confirmed)
+   - Certificate status: 'not_stated'
+   - UI does NOT advertise this as a free certificate; displays note that status is not stated in official source.
+3. NDG Linux Unhatched (course-009):
+   - Free access: true
+   - Certificate status: 'none'
+4. Content language is rendered distinctly from UI language.

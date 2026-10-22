@@ -1,0 +1,14 @@
+Test ID: FAV-02
+Date: 2026-10-21
+Scope: LocalStorage corruption resilience and quota/disabled fallback
+Result: PASS
+
+Details:
+1. Simulated invalid JSON in `opportunity-gateway2:saved:v1`:
+   - Corrupt value: `{not valid json syntax`
+   - Outcome: Handled safely in try/catch, returns empty Set(), no JavaScript runtime crash.
+2. Simulated foreign/unknown IDs:
+   - Value: `["opp-001", "non-existent-999", "course-001"]`
+   - Outcome: Filtered strictly against valid canonical opportunities map. Only `opp-001` and `course-001` loaded.
+3. Disabled/blocked localStorage (private browsing or quota exceeded):
+   - Graceful fallback: writes fail silently without uncaught errors, user receives toast notification that item was saved for current session.

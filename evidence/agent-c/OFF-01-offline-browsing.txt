@@ -1,0 +1,18 @@
+Test ID: OFF-01
+Date: 2026-10-21
+Scope: Offline browsing across all 4 production pages after initial visit
+Result: PASS
+
+Details:
+1. Precached assets in `og2-cache-v1`:
+   - 4 HTML pages: `index.html`, `detail.html`, `favorites.html`, `about.html`
+   - Data: `data/opportunities.json`
+   - Styles: `assets/css/styles.css`
+   - Modules: `common.js`, `data.js`, `i18n.js`, `list.js`, `detail.js`, `favorites.js`
+   - Fonts: `cairo-arabic.woff2`, `cairo-latin.woff2`, `cairo-OFL.txt`
+   - Icons: `favicon.svg`, `gateway.svg`, `icon-192.svg`, `icon-512.svg`
+2. Simulating offline mode (`navigator.onLine = false`):
+   - Offline banner `#offline-banner` displays notice that internet connection is needed for external source links.
+   - All 4 pages navigate properly from cache.
+   - Searching, filtering, and shortlist toggling continue working smoothly from cache and LocalStorage.
+   - External provider links are not cached, protecting user privacy and avoiding CORS errors.

@@ -1,0 +1,11 @@
+Test ID: OFF-02
+Date: 2026-10-21
+Scope: First-visit boundary documentation
+Result: PASS
+
+Details:
+1. Fresh browser profile without prior cache:
+   - When network is severed prior to any initial visit, standard browser offline connection page is expected.
+2. Boundary clarity:
+   - Clearly documented in `README.md`, `about.html`, and `ACCEPTANCE-TESTS.md` that Service Worker requires an initial successful online visit to prime the local cache.
+   - The application does not falsely claim that it functions without a prior load.

@@ -1,0 +1,2760 @@
+{
+  "meta": {
+    "project": "Opportunity Gateway 2",
+    "schema_version": "2.0.0",
+    "prepared_at": "2026-10-21",
+    "record_count": 20,
+    "scholarship_count": 10,
+    "course_count": 10,
+    "disclaimer": {
+      "ar": "البيانات لقطة مؤرخة من مصادر رسمية عامة، بفحص آلي وليس مراجعة بشرية مكتملة. تُراجع الأهلية والمواعيد لدى الجهة قبل التقديم.",
+      "en": "A dated snapshot of public official sources, checked automatically rather than by completed human review. Confirm eligibility and deadlines with the provider before applying."
+    }
+  },
+  "opportunities": [
+    {
+      "id": "opp-001",
+      "slug": "open-doors-russia",
+      "type": "scholarship",
+      "title": {
+        "ar": "منحة Open Doors الروسية",
+        "en": "Open Doors Russian Scholarship"
+      },
+      "provider": {
+        "ar": "رابطة الجامعات العالمية",
+        "en": "Global Universities Association"
+      },
+      "country": {
+        "ar": "روسيا",
+        "en": "Russia"
+      },
+      "levels": [
+        "bachelor",
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-08-20",
+        "closes_at": "2026-11-01",
+        "timezone": null,
+        "note": {
+          "ar": "التسجيل حتى 1 نوفمبر 2026؛ لم تُحدد ساعة الإغلاق في المصدر المفحوص. إعلان نتائج المرحلة الأولى ليس مهلة تقديم جديدة.",
+          "en": "Register by 1 November 2026; the inspected source does not state a closing hour. First-stage results are not a new application deadline."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "مفتوحة للمواطنين الأجانب وعديمي الجنسية وفق شروط العمر والمؤهل لكل مسار.",
+        "en": "Open to foreign citizens and stateless persons, subject to track-specific age and education rules."
+      },
+      "funding": {
+        "ar": "إعفاء من الرسوم ضمن الحصة الحكومية الروسية للفائزين؛ المصاريف الأخرى تخضع لقواعد البرنامج والجامعة.",
+        "en": "Tuition-free study under the Russian government quota for winners; other costs follow programme and university rules."
+      },
+      "requirements": {
+        "ar": [
+          "جواز سفر أو إثبات هوية",
+          "شهادة أو إثبات دراسة مناسب للمسار",
+          "ملف إنجاز واختبارات المراحل"
+        ],
+        "en": [
+          "Passport or identity document",
+          "Degree or current-study evidence appropriate to the track",
+          "Portfolio and stage assessments"
+        ]
+      },
+      "source_url": "https://od.globaluni.ru/rules",
+      "application_url": "https://od.globaluni.ru/register",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "مسابقة دولية تتيح للفائزين الدراسة ضمن الحصة الحكومية الروسية، وفق شروط المسار والجامعة.",
+        "en": "An international competition offering winners study under the Russian government quota, subject to track and university rules."
+      },
+      "description": {
+        "ar": "مفتوحة للمواطنين الأجانب وعديمي الجنسية وفق شروط العمر والمؤهل لكل مسار. إعفاء من الرسوم ضمن الحصة الحكومية الروسية للفائزين؛ المصاريف الأخرى تخضع لقواعد البرنامج والجامعة.",
+        "en": "Open to foreign citizens and stateless persons, subject to track-specific age and education rules. Tuition-free study under the Russian government quota for winners; other costs follow programme and university rules."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-001"
+      },
+      "display": {
+        "mark": "OD",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "مفتوحة في تاريخ فحص المصدر للمتقدم المستوفي لشروط البرنامج.",
+        "en": "Open at the source-check date for applicants meeting the programme requirements."
+      },
+      "evidence": [
+        {
+          "url": "https://od.globaluni.ru/rules",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: 2026 rules allow eligible foreign/stateless participants and give registration from 20 August to 1 November."
+        },
+        {
+          "url": "https://od.globaluni.ru/",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: The schedule separates the 1 November registration deadline from first-stage results on 13 November."
+        }
+      ]
+    },
+    {
+      "id": "opp-002",
+      "slug": "kaust-graduate-fellowship",
+      "type": "scholarship",
+      "title": {
+        "ar": "زمالة كاوست للدراسات العليا",
+        "en": "KAUST Graduate Fellowship"
+      },
+      "provider": {
+        "ar": "جامعة الملك عبدالله للعلوم والتقنية",
+        "en": "King Abdullah University of Science and Technology"
+      },
+      "country": {
+        "ar": "السعودية",
+        "en": "Saudi Arabia"
+      },
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "stem"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-09-28",
+        "closes_at": "2027-01-03",
+        "timezone": null,
+        "note": {
+          "ar": "الجولة الثانية لخريف 2027: 28 سبتمبر 2026 إلى 3 يناير 2027. تصف الجامعة المواعيد بأنها قابلة للتغيير.",
+          "en": "Fall 2027 Round 2: 28 September 2026 to 3 January 2027. The university marks the dates as tentative."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "متقدمون من جميع الجنسيات إلى برامج ماجستير أو دكتوراه مؤهلة، مع مؤهل ذي صلة وحد أدنى معلن للمعدل واللغة.",
+        "en": "Applicants of all nationalities to eligible MS or PhD programmes, with a relevant degree and published GPA and English requirements."
+      },
+      "funding": {
+        "ar": "رسوم كاملة، سكن أساسي، تأمين صحي، مخصص معيشة، ودعم الانتقال وفق شروط الزمالة.",
+        "en": "Full tuition, base housing, health insurance, living stipend, and relocation support subject to fellowship terms."
+      },
+      "requirements": {
+        "ar": [
+          "سجل أكاديمي",
+          "سيرة ذاتية",
+          "بيان غرض",
+          "بيانات ثلاثة موصين",
+          "إثبات لغة إنجليزية عند الطلب",
+          "صورة جواز السفر"
+        ],
+        "en": [
+          "Academic transcripts",
+          "CV",
+          "Statement of purpose",
+          "Contact details for three referees",
+          "English proficiency evidence when required",
+          "Passport copy"
+        ]
+      },
+      "source_url": "https://admissions.kaust.edu.sa/how-to-apply/admission-timelines",
+      "application_url": "https://apply.kaust.edu.sa/apply/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "قبول دراسات عليا بحثية في كاوست مع زمالة للطلاب المقبولين؛ الاختيار الحالي لدخول خريف 2027.",
+        "en": "Research graduate admission at KAUST with fellowship support for admitted students; this listing concerns Fall 2027 entry."
+      },
+      "description": {
+        "ar": "متقدمون من جميع الجنسيات إلى برامج ماجستير أو دكتوراه مؤهلة، مع مؤهل ذي صلة وحد أدنى معلن للمعدل واللغة. رسوم كاملة، سكن أساسي، تأمين صحي، مخصص معيشة، ودعم الانتقال وفق شروط الزمالة.",
+        "en": "Applicants of all nationalities to eligible MS or PhD programmes, with a relevant degree and published GPA and English requirements. Full tuition, base housing, health insurance, living stipend, and relocation support subject to fellowship terms."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-002"
+      },
+      "display": {
+        "mark": "KAUST",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "خريف 2027 — الجولة الثانية؛ ربيع 2027 مغلق.",
+        "en": "Fall 2027 — Round 2; Spring 2027 is closed."
+      },
+      "evidence": [
+        {
+          "url": "https://apply.kaust.edu.sa/apply/",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: Spring 2027 is closed; Fall 2027 is open for all three graduate degree pathways."
+        },
+        {
+          "url": "https://admissions.kaust.edu.sa/how-to-apply/admission-timelines",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: Round 2 runs from 28 September 2026 to 3 January 2027; dates are described as tentative."
+        },
+        {
+          "url": "https://admissions.kaust.edu.sa/study/ms-phd-degree",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: Admitted MS and PhD students receive fellowship support."
+        }
+      ]
+    },
+    {
+      "id": "opp-004",
+      "slug": "mbzuai-phd",
+      "type": "scholarship",
+      "title": {
+        "ar": "منح دكتوراه MBZUAI — البرامج عدا الأحياء الحاسوبية",
+        "en": "MBZUAI PhD Funding — Programmes except Computational Biology"
+      },
+      "provider": {
+        "ar": "جامعة محمد بن زايد للذكاء الاصطناعي",
+        "en": "Mohamed bin Zayed University of Artificial Intelligence"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "United Arab Emirates"
+      },
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "ai",
+        "computer-science"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-09-07",
+        "closes_at": "2026-12-15",
+        "timezone": "Asia/Dubai",
+        "note": {
+          "ar": "الإغلاق في 15 ديسمبر 2026 الساعة 5 مساءً بتوقيت الخليج GST (UTC+4).",
+          "en": "Closes on 15 December 2026 at 5 p.m. Gulf Standard Time (UTC+4)."
+        },
+        "closes_time": "17:00"
+      },
+      "eligibility": {
+        "ar": "متقدمون دوليون ومحليون بخلفية STEM ذات صلة ومعدل البرنامج المطلوب، ويستمر التمويل بشرط المطابقة مع مشرف والتقدم المرضي.",
+        "en": "International and local applicants with a relevant STEM background and required programme GPA; continued funding requires advisor matching and satisfactory progress."
+      },
+      "funding": {
+        "ar": "إعفاء من الرسوم، مخصص شهري، تذكرة سنوية، تأمين صحي، وإقامة للطالب الدولي المؤهل.",
+        "en": "Tuition waiver, monthly stipend, annual return airfare, health insurance, and sponsored residence for eligible international students."
+      },
+      "requirements": {
+        "ar": [
+          "طلب إلكتروني",
+          "سجلات وشهادات أكاديمية",
+          "سيرة ذاتية",
+          "بيان غرض",
+          "بيان بحث",
+          "ثلاث توصيات",
+          "إثبات لغة",
+          "جواز سفر",
+          "اختبار فرز ومقابلة عند الاختيار"
+        ],
+        "en": [
+          "Online application",
+          "Academic transcripts and certificates",
+          "CV",
+          "Statement of purpose",
+          "Research statement",
+          "Three recommendations",
+          "English proof",
+          "Passport",
+          "Screening exam and interview if shortlisted"
+        ]
+      },
+      "source_url": "https://mbzuai.ac.ae/admissions/graduate-phd-admissions",
+      "application_url": "https://apply.mbzuai.ac.ae/ApplicantPortal/s/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "اختر برنامجًا واحدًا فقط في دورة القبول. التمويل واستمراره مرتبطان بشروط القبول والمشرف والتقدم الأكاديمي.",
+        "en": "Choose only one programme in the admissions cycle. Funding and its continuation depend on admission, advisor matching, and academic-progress conditions."
+      },
+      "summary": {
+        "ar": "تمويل دكتوراه بحثية في جامعة محمد بن زايد للذكاء الاصطناعي، للبرامج ذات موعد ديسمبر.",
+        "en": "Research PhD funding at MBZUAI for programmes using the December deadline."
+      },
+      "description": {
+        "ar": "متقدمون دوليون ومحليون بخلفية STEM ذات صلة ومعدل البرنامج المطلوب، ويستمر التمويل بشرط المطابقة مع مشرف والتقدم المرضي. إعفاء من الرسوم، مخصص شهري، تذكرة سنوية، تأمين صحي، وإقامة للطالب الدولي المؤهل.",
+        "en": "International and local applicants with a relevant STEM background and required programme GPA; continued funding requires advisor matching and satisfactory progress. Tuition waiver, monthly stipend, annual return airfare, health insurance, and sponsored residence for eligible international students."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-004"
+      },
+      "display": {
+        "mark": "AI",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "قبول 2027؛ يحق لكل متقدم تقديم طلب واحد فقط عبر برامج دورة القبول نفسها، بما فيها الأحياء الحاسوبية.",
+        "en": "2027 admissions; each applicant may submit only one application across programmes in this admissions cycle, including Computational Biology."
+      },
+      "evidence": [
+        {
+          "url": "https://mbzuai.ac.ae/admissions/graduate-phd-admissions",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: The date table gives 7 September, 8 a.m. GST to 15 December, 5 p.m. GST for the relevant programmes."
+        },
+        {
+          "url": "https://mbzuai.ac.ae/admissions/graduate-phd-admissions",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: Funding has continuing conditions; domestic and international student categories are described."
+        }
+      ]
+    },
+    {
+      "id": "opp-005",
+      "slug": "mbzuai-computational-biology-phd",
+      "type": "scholarship",
+      "title": {
+        "ar": "دكتوراه الأحياء الحاسوبية في MBZUAI",
+        "en": "MBZUAI Computational Biology PhD"
+      },
+      "provider": {
+        "ar": "جامعة محمد بن زايد للذكاء الاصطناعي",
+        "en": "Mohamed bin Zayed University of Artificial Intelligence"
+      },
+      "country": {
+        "ar": "الإمارات",
+        "en": "United Arab Emirates"
+      },
+      "levels": [
+        "phd"
+      ],
+      "fields": [
+        "ai",
+        "computational-biology"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-09-30",
+        "closes_at": "2027-01-22",
+        "timezone": "Asia/Dubai",
+        "note": {
+          "ar": "الإغلاق في 22 يناير 2027 الساعة 5 مساءً بتوقيت الخليج GST (UTC+4).",
+          "en": "Closes on 22 January 2027 at 5 p.m. Gulf Standard Time (UTC+4)."
+        },
+        "closes_time": "17:00"
+      },
+      "eligibility": {
+        "ar": "متقدمون بخلفية علمية أو هندسية مناسبة مستوفون لمتطلبات الدكتوراه واللغة والاختيار الفني.",
+        "en": "Applicants with a relevant science or engineering background who meet PhD, English, and technical selection requirements."
+      },
+      "funding": {
+        "ar": "تمويل الدكتوراه وفق نموذج الجامعة: رسوم ومخصص وتذكرة وتأمين وإقامة، مع شروط الاستمرار.",
+        "en": "PhD funding under the university model: tuition, stipend, airfare, insurance, and residence, subject to continuation rules."
+      },
+      "requirements": {
+        "ar": [
+          "طلب إلكتروني",
+          "الشهادات والسجلات",
+          "سيرة ذاتية",
+          "بيان غرض وبحث",
+          "ثلاث توصيات",
+          "إثبات لغة",
+          "جواز سفر",
+          "اختبار ومقابلة محتملة"
+        ],
+        "en": [
+          "Online application",
+          "Certificates and transcripts",
+          "CV",
+          "Purpose and research statements",
+          "Three recommendations",
+          "English proof",
+          "Passport",
+          "Possible test and interview"
+        ]
+      },
+      "source_url": "https://mbzuai.ac.ae/admissions/graduate-phd-admissions",
+      "application_url": "https://apply.mbzuai.ac.ae/ApplicantPortal/s/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "اختر برنامجًا واحدًا فقط في دورة القبول. التمويل واستمراره مرتبطان بشروط القبول والمشرف والتقدم الأكاديمي.",
+        "en": "Choose only one programme in the admissions cycle. Funding and its continuation depend on admission, advisor matching, and academic-progress conditions."
+      },
+      "summary": {
+        "ar": "مسار دكتوراه الأحياء الحاسوبية ضمن قبول MBZUAI، بموعد منفصل عن بقية برامج الدكتوراه.",
+        "en": "The Computational Biology PhD route within MBZUAI admissions, with a deadline different from the other PhD programmes."
+      },
+      "description": {
+        "ar": "متقدمون بخلفية علمية أو هندسية مناسبة مستوفون لمتطلبات الدكتوراه واللغة والاختيار الفني. تمويل الدكتوراه وفق نموذج الجامعة: رسوم ومخصص وتذكرة وتأمين وإقامة، مع شروط الاستمرار.",
+        "en": "Applicants with a relevant science or engineering background who meet PhD, English, and technical selection requirements. PhD funding under the university model: tuition, stipend, airfare, insurance, and residence, subject to continuation rules."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-005"
+      },
+      "display": {
+        "mark": "BIO",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "قبول 2027؛ يحق لكل متقدم تقديم طلب واحد فقط عبر برامج دورة القبول نفسها، بما فيها الأحياء الحاسوبية.",
+        "en": "2027 admissions; each applicant may submit only one application across programmes in this admissions cycle, including Computational Biology."
+      },
+      "evidence": [
+        {
+          "url": "https://mbzuai.ac.ae/admissions/graduate-phd-admissions",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: Computational Biology opens 30 September 2026 at 8 a.m. GST and closes 22 January 2027 at 5 p.m. GST."
+        }
+      ]
+    },
+    {
+      "id": "opp-006",
+      "slug": "gates-cambridge",
+      "type": "scholarship",
+      "title": {
+        "ar": "منحة غيتس كامبريدج",
+        "en": "Gates Cambridge Scholarship"
+      },
+      "provider": {
+        "ar": "مؤسسة غيتس كامبريدج وجامعة كامبريدج",
+        "en": "Gates Cambridge Trust and University of Cambridge"
+      },
+      "country": {
+        "ar": "المملكة المتحدة",
+        "en": "United Kingdom"
+      },
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "course_specific",
+        "opens_at": null,
+        "closes_at": null,
+        "timezone": null,
+        "note": {
+          "ar": "8 ديسمبر 2026 أو 6 يناير 2027، الساعة 23:59 GMT حسب موعد تمويل البرنامج. لا يوجد موعد واحد لجميع البرامج.",
+          "en": "8 December 2026 or 6 January 2027 at 23:59 GMT, according to the course funding deadline. There is no single deadline for every course."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "أي مواطن من خارج المملكة المتحدة يتقدم لبرنامج مؤهل، مع تميز أكاديمي وملاءمة البرنامج وقيادة والتزام بتحسين حياة الآخرين.",
+        "en": "Any non-UK citizen applying to an eligible programme, assessed for academic excellence, course fit, leadership, and commitment to improving lives."
+      },
+      "funding": {
+        "ar": "التكلفة الكاملة للدراسة مع مكونات إضافية وفق سياسة المنحة.",
+        "en": "Full cost of study plus additional components under the scholarship policy."
+      },
+      "requirements": {
+        "ar": [
+          "طلب قبول كامبريدج",
+          "قسم تمويل Gates",
+          "بيان شخصي",
+          "مقترح بحث للدكتوراه",
+          "توصية خاصة بالمنحة",
+          "متطلبات البرنامج واللغة"
+        ],
+        "en": [
+          "Cambridge admission application",
+          "Gates funding section",
+          "Personal statement",
+          "PhD research proposal",
+          "Scholarship-specific reference",
+          "Course and language requirements"
+        ]
+      },
+      "source_url": "https://www.gatescambridge.org/apply/timeline/",
+      "application_url": "https://apply.postgraduate.study.cam.ac.uk/applicant/login",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "منحة تنافسية للدراسات العليا في كامبريدج؛ هذا السجل يخص جولة المتقدمين الدوليين.",
+        "en": "A competitive postgraduate scholarship at Cambridge; this listing concerns the international application round."
+      },
+      "description": {
+        "ar": "أي مواطن من خارج المملكة المتحدة يتقدم لبرنامج مؤهل، مع تميز أكاديمي وملاءمة البرنامج وقيادة والتزام بتحسين حياة الآخرين. التكلفة الكاملة للدراسة مع مكونات إضافية وفق سياسة المنحة.",
+        "en": "Any non-UK citizen applying to an eligible programme, assessed for academic excellence, course fit, leadership, and commitment to improving lives. Full cost of study plus additional components under the scholarship policy."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-006"
+      },
+      "display": {
+        "mark": "GATES",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "الجولة الدولية المؤهلة؛ جولة المواطن الأمريكي المقيم في الولايات المتحدة أغلقت في 14 أكتوبر 2026.",
+        "en": "Eligible international round; the round for US citizens residing in the USA closed on 14 October 2026."
+      },
+      "evidence": [
+        {
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-cambridge-scholarship-2026",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: 2027/28 international listing uses the course funding deadline and directs US-resident US citizens to the separate US round."
+        },
+        {
+          "url": "https://www.student-funding.cam.ac.uk/fund/gates-us-fund-2026",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: US round is explicitly closed after 14 October 2026."
+        },
+        {
+          "url": "https://www.postgraduate.study.cam.ac.uk/funding",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: Main 2027/28 funding deadlines are 8 December and 6 January; complete applications/references are due 23:59 GMT."
+        },
+        {
+          "url": "https://www.gatescambridge.org/apply/timeline/",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: The earlier round is only for US citizens resident in the USA; US citizens overseas use the later round."
+        },
+        {
+          "url": "https://www.gatescambridge.org/apply/timeline/",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: The international deadline depends on the course, and documents are due by 11:59 p.m. UK time."
+        }
+      ]
+    },
+    {
+      "id": "opp-007",
+      "slug": "oxford-clarendon",
+      "type": "scholarship",
+      "title": {
+        "ar": "منحة كلارندون في أكسفورد",
+        "en": "Oxford Clarendon Scholarship"
+      },
+      "provider": {
+        "ar": "جامعة أكسفورد",
+        "en": "University of Oxford"
+      },
+      "country": {
+        "ar": "المملكة المتحدة",
+        "en": "United Kingdom"
+      },
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "course_specific",
+        "opens_at": null,
+        "closes_at": null,
+        "timezone": null,
+        "note": {
+          "ar": "قدّم للبرنامج قبل موعد التمويل الخاص به في ديسمبر 2026 أو يناير 2027.",
+          "en": "Apply to the course by its relevant December 2026 or January 2027 funding deadline."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "جميع الجنسيات ومجالات الدراسة لدرجة ماجستير أو DPhil جديدة، ويعتمد الاختيار على التفوق والإمكانات الأكاديمية.",
+        "en": "All nationalities and subject areas for a new Master’s or DPhil, selected for academic excellence and potential."
+      },
+      "funding": {
+        "ar": "رسوم البرنامج كاملة ومخصص معيشة طوال مدة الالتزام بالرسوم.",
+        "en": "Full course fees and a living grant for the fee-liability period."
+      },
+      "requirements": {
+        "ar": [
+          "طلب برنامج أكسفورد مكتمل في موعد التمويل",
+          "سجل أكاديمي ممتاز",
+          "المستندات والتوصيات المطلوبة للبرنامج"
+        ],
+        "en": [
+          "Complete Oxford course application by the funding deadline",
+          "Excellent academic record",
+          "Course-required documents and references"
+        ]
+      },
+      "source_url": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/funding/clarendon/applicants",
+      "application_url": "https://www.ox.ac.uk/admissions/graduate/applying-to-oxford/application-guide",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "يُنظر تلقائيًا في المتقدمين المؤهلين لكلارندون عند تقديم طلب البرنامج قبل موعد التمويل الخاص به.",
+        "en": "Eligible applicants are automatically considered for Clarendon when applying by their course funding deadline."
+      },
+      "description": {
+        "ar": "جميع الجنسيات ومجالات الدراسة لدرجة ماجستير أو DPhil جديدة، ويعتمد الاختيار على التفوق والإمكانات الأكاديمية. رسوم البرنامج كاملة ومخصص معيشة طوال مدة الالتزام بالرسوم.",
+        "en": "All nationalities and subject areas for a new Master’s or DPhil, selected for academic excellence and potential. Full course fees and a living grant for the fee-liability period."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-007"
+      },
+      "display": {
+        "mark": "OX",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "النظر في التمويل عبر طلب برنامج مفتوح ومؤهل لدخول 2027–2028؛ لا طلب منفصل للمنحة.",
+        "en": "Funding consideration through an open eligible course application for 2027–2028 entry; no separate scholarship application."
+      },
+      "evidence": [
+        {
+          "url": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/funding/clarendon/applicants",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: Consideration is automatic for new master's/DPhil applications submitted by their relevant December/January course deadline."
+        },
+        {
+          "url": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding/funding/clarendon",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: No nationality, residence or subject restriction; full-time and part-time master's/DPhil routes are eligible."
+        },
+        {
+          "url": "https://www.ox.ac.uk/admissions/graduate/application-guide",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_indexed_search: The current guide concerns 2026/27 applications, mainly for 2027/28 entry."
+        },
+        {
+          "url": "https://www.qeh.ox.ac.uk/content/how-apply",
+          "supports": [
+            "application_status",
+            "cycle_scope",
+            "deadline"
+          ],
+          "note": "official_page_opened: The department gives distinct 2027/28 course deadlines on 2 December, 7 January and 26 January at midday UK time."
+        }
+      ]
+    },
+    {
+      "id": "opp-009",
+      "slug": "ubc-international-scholars",
+      "type": "scholarship",
+      "title": {
+        "ar": "برنامج UBC للعلماء الدوليين",
+        "en": "UBC International Scholars Program"
+      },
+      "provider": {
+        "ar": "جامعة كولومبيا البريطانية",
+        "en": "University of British Columbia"
+      },
+      "country": {
+        "ar": "كندا",
+        "en": "Canada"
+      },
+      "levels": [
+        "bachelor"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-10-05",
+        "closes_at": "2026-11-15",
+        "timezone": null,
+        "note": {
+          "ar": "طلب International Scholars حتى 15 نوفمبر 2026؛ يجب إكمال الترشيح والتوصية قبله. تُطلب الوثائق بحلول 31 يناير 2027.",
+          "en": "International Scholars application due 15 November 2026, with nomination and reference completed beforehand. Required documents are due by 31 January 2027."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "طالب دولي متفوق يدخل البكالوريوس مباشرة من المدرسة، يثبت حاجة مالية كبيرة ومشاركة مجتمعية، مع ترشيح المدرسة.",
+        "en": "An international student entering undergraduate study directly from secondary school, with strong academics, significant financial need, community involvement, and school nomination."
+      },
+      "funding": {
+        "ar": "جوائز مبنية على الحاجة والجدارة؛ القيمة تحدد بعد تقييم الحاجة وقد تصل إلى تغطية كبيرة لتكاليف الدراسة والمعيشة.",
+        "en": "Need-and-merit awards; value is based on assessed need and may cover substantial study and living costs."
+      },
+      "requirements": {
+        "ar": [
+          "ترشيح المدرسة",
+          "طلب UBC",
+          "طلب برنامج العلماء الدوليين",
+          "السجلات المدرسية",
+          "إثبات اللغة",
+          "بيانات الحاجة المالية والأنشطة"
+        ],
+        "en": [
+          "School nomination",
+          "UBC application",
+          "International Scholars application",
+          "School records",
+          "English proof",
+          "Financial-need and activity information"
+        ]
+      },
+      "source_url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+      "application_url": "https://you.ubc.ca/applying-ubc/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "دعم قائم على الحاجة المالية والتميز لطلاب البكالوريوس الدوليين، مع ترشيح وتوصية من المدرسة.",
+        "en": "Need- and merit-based support for international undergraduates, with school nomination and a teacher reference."
+      },
+      "description": {
+        "ar": "طالب دولي متفوق يدخل البكالوريوس مباشرة من المدرسة، يثبت حاجة مالية كبيرة ومشاركة مجتمعية، مع ترشيح المدرسة. جوائز مبنية على الحاجة والجدارة؛ القيمة تحدد بعد تقييم الحاجة وقد تصل إلى تغطية كبيرة لتكاليف الدراسة والمعيشة.",
+        "en": "An international student entering undergraduate study directly from secondary school, with strong academics, significant financial need, community involvement, and school nomination. Need-and-merit awards; value is based on assessed need and may cover substantial study and living costs."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-009"
+      },
+      "display": {
+        "mark": "UBC",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "مفتوحة في تاريخ فحص المصدر للمتقدم المستوفي لشروط البرنامج.",
+        "en": "Open at the source-check date for applicants meeting the programme requirements."
+      },
+      "evidence": [
+        {
+          "url": "https://you.ubc.ca/financial-planning/scholarships-awards-international-students/international-scholars/",
+          "supports": [
+            "open_2027_intake",
+            "opens_2026_10_05",
+            "deadline_2026_11_15",
+            "school_nomination",
+            "eligibility"
+          ],
+          "note": "Official page explicitly states September 2027 applications are open."
+        }
+      ]
+    },
+    {
+      "id": "opp-010",
+      "slug": "doha-institute-scholarships",
+      "type": "scholarship",
+      "title": {
+        "ar": "منح معهد الدوحة للدراسات العليا",
+        "en": "Doha Institute Scholarships"
+      },
+      "provider": {
+        "ar": "معهد الدوحة للدراسات العليا",
+        "en": "Doha Institute for Graduate Studies"
+      },
+      "country": {
+        "ar": "قطر",
+        "en": "Qatar"
+      },
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "social-sciences",
+        "humanities",
+        "public-policy"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-09-01",
+        "closes_at": "2027-01-15",
+        "timezone": null,
+        "note": {
+          "ar": "إغلاق طلبات القبول للعام 2027–2028 في 15 يناير 2027.",
+          "en": "Admission applications for 2027–2028 close on 15 January 2027."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "متقدمون قطريون ودوليون إلى برامج المعهد المستوفون لشروط البرنامج؛ المنح تنافسية وترتبط بالقبول وسياسة الدعم.",
+        "en": "Qatari and international applicants meeting programme conditions; scholarships are competitive and tied to admission and aid policy."
+      },
+      "funding": {
+        "ar": "تختلف التغطية حسب نوع المنحة وقرار المعهد؛ يجب اعتماد خطاب العرض النهائي لتحديد الرسوم والمعيشة والسكن والسفر.",
+        "en": "Coverage varies by scholarship type and institute decision; the final offer controls tuition, living, housing, and travel benefits."
+      },
+      "requirements": {
+        "ar": [
+          "طلب قبول إلكتروني",
+          "شهادة وسجل بكالوريوس أو ما يعادله",
+          "سيرة ذاتية",
+          "بيان شخصي",
+          "توصيات",
+          "إثبات لغة حسب البرنامج",
+          "جواز سفر"
+        ],
+        "en": [
+          "Online admission application",
+          "Bachelor’s degree and transcript or equivalent",
+          "CV",
+          "Personal statement",
+          "References",
+          "Language proof by programme",
+          "Passport"
+        ]
+      },
+      "source_url": "https://www.dohainstitute.edu.qa/en/Admissions-Office/Pages/Scholarships.aspx",
+      "application_url": "https://admissions.dohainstitute.edu.qa/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "فرص تمويل مرتبطة بقبول الدراسات العليا في معهد الدوحة؛ نوع التغطية يتحدد وفق المنحة والعرض.",
+        "en": "Funding opportunities linked to graduate admission at the Doha Institute; coverage depends on the award and offer."
+      },
+      "description": {
+        "ar": "متقدمون قطريون ودوليون إلى برامج المعهد المستوفون لشروط البرنامج؛ المنح تنافسية وترتبط بالقبول وسياسة الدعم. تختلف التغطية حسب نوع المنحة وقرار المعهد؛ يجب اعتماد خطاب العرض النهائي لتحديد الرسوم والمعيشة والسكن والسفر.",
+        "en": "Qatari and international applicants meeting programme conditions; scholarships are competitive and tied to admission and aid policy. Coverage varies by scholarship type and institute decision; the final offer controls tuition, living, housing, and travel benefits."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-010"
+      },
+      "display": {
+        "mark": "DI",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "نافذة القبول 2027–2028 مفتوحة وفق النص الرسمي المفهرس؛ التمويل تنافسي وتفاصيله حسب المنحة.",
+        "en": "The 2027–2028 admissions window is open according to current official indexed text; funding is competitive and award-specific."
+      },
+      "evidence": [
+        {
+          "url": "https://www.dohainstitute.edu.qa/ar/Admissions-Office/Pages/FAQs.aspx",
+          "supports": [
+            "opens_2026_09_01",
+            "deadline_2027_01_15"
+          ],
+          "note": "Current official indexed text gives the 2027–2028 window; direct extraction omitted dynamic page content."
+        },
+        {
+          "url": "https://www.dohainstitute.edu.qa/en/Admissions-Office/Pages/Scholarships.aspx",
+          "supports": [
+            "official_scholarship_reference"
+          ],
+          "note": "Scholarship terms must be confirmed in the final award offer; public-page extraction was incomplete."
+        },
+        {
+          "url": "https://admissions.dohainstitute.edu.qa/",
+          "supports": [
+            "official_admissions_portal"
+          ],
+          "note": "Public portal; no account sign-in or application submission performed."
+        }
+      ]
+    },
+    {
+      "id": "opp-011",
+      "slug": "hbku-graduate-scholarship",
+      "type": "scholarship",
+      "title": {
+        "ar": "منح الدراسات العليا في جامعة حمد بن خليفة",
+        "en": "HBKU Graduate Scholarships"
+      },
+      "provider": {
+        "ar": "جامعة حمد بن خليفة",
+        "en": "Hamad Bin Khalifa University"
+      },
+      "country": {
+        "ar": "قطر",
+        "en": "Qatar"
+      },
+      "levels": [
+        "master",
+        "phd"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "fixed",
+        "opens_at": "2026-10-01",
+        "closes_at": "2027-02-01",
+        "timezone": null,
+        "note": {
+          "ar": "آخر موعد للمتقدم الدولي هو 1 فبراير 2027.",
+          "en": "The international graduate applicant deadline is 1 February 2027."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "متقدمون دوليون إلى برامج دراسات عليا مؤهلة؛ النظر في المنحة يتم أثناء القبول بناءً على الجدارة أو الحاجة وتوفر التمويل.",
+        "en": "International applicants to eligible graduate programmes; scholarship consideration occurs during admission based on merit or need and available funds."
+      },
+      "funding": {
+        "ar": "قد تشمل إعفاءً من الرسوم ومخصصًا وفق البرنامج والقرار؛ التمويل غير مضمون لكل المقبولين.",
+        "en": "May include tuition support and stipend depending on programme and award; funding is not guaranteed for every admit."
+      },
+      "requirements": {
+        "ar": [
+          "طلب إلكتروني",
+          "سجلات وشهادات",
+          "هوية أو جواز",
+          "بيان شخصي",
+          "توصيات",
+          "إثبات لغة",
+          "متطلبات الكلية المختارة"
+        ],
+        "en": [
+          "Online application",
+          "Transcripts and certificates",
+          "ID or passport",
+          "Personal statement",
+          "References",
+          "Language proof",
+          "Selected-college requirements"
+        ]
+      },
+      "source_url": "https://www.hbku.edu.qa/en/scholarship",
+      "application_url": "https://www.hbku.edu.qa/en/graduate-admissions",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "تحقق من المصدر الرسمي قبل التقديم، وحدّث تاريخ التحقق إذا تغيرت الدورة.",
+        "en": "Verify the official source before applying and update the verification date when the cycle changes."
+      },
+      "summary": {
+        "ar": "تمويل تنافسي لبرامج الدراسات العليا قد يشمل إعفاء من الرسوم ومخصصًا ماليًا وفق شروط الجامعة.",
+        "en": "Competitive graduate funding that may include tuition waivers and stipends under university rules."
+      },
+      "description": {
+        "ar": "متقدمون دوليون إلى برامج دراسات عليا مؤهلة؛ النظر في المنحة يتم أثناء القبول بناءً على الجدارة أو الحاجة وتوفر التمويل. قد تشمل إعفاءً من الرسوم ومخصصًا وفق البرنامج والقرار؛ التمويل غير مضمون لكل المقبولين.",
+        "en": "International applicants to eligible graduate programmes; scholarship consideration occurs during admission based on merit or need and available funds. May include tuition support and stipend depending on programme and award; funding is not guaranteed for every admit."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-011"
+      },
+      "display": {
+        "mark": "HBKU",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "قبول الدراسات العليا للمتقدمين الدوليين؛ التمويل يعتمد على التقييم والبرنامج ولا يُضمن لكل مقبول.",
+        "en": "Graduate admissions for international applicants; funding depends on assessment and programme rules and is not guaranteed for every admitted student."
+      },
+      "evidence": [
+        {
+          "url": "https://www.hbku.edu.qa/en/graduate-admissions",
+          "supports": [
+            "opens_2026_10_01",
+            "international_deadline_2027_02_01"
+          ],
+          "note": "Current official indexed page; direct fetch returned HTTP 403."
+        },
+        {
+          "url": "https://www.hbku.edu.qa/en/scholarship",
+          "supports": [
+            "competitive_funding",
+            "tuition_waiver_and_stipend_possible"
+          ],
+          "note": "Current official indexed scholarship guidelines; no universal full-funding guarantee."
+        }
+      ]
+    },
+    {
+      "id": "opp-018",
+      "slug": "erasmus-mundus-joint-masters",
+      "type": "scholarship",
+      "title": {
+        "ar": "منح إيراسموس موندوس للماجستير المشترك",
+        "en": "Erasmus Mundus Joint Masters Scholarships"
+      },
+      "provider": {
+        "ar": "الاتحاد الأوروبي والبرامج المشاركة",
+        "en": "European Union and participating consortia"
+      },
+      "country": {
+        "ar": "دول متعددة",
+        "en": "Multiple countries"
+      },
+      "levels": [
+        "master"
+      ],
+      "fields": [
+        "multiple"
+      ],
+      "status": "open",
+      "deadline": {
+        "type": "programme_specific",
+        "opens_at": null,
+        "closes_at": null,
+        "timezone": null,
+        "note": {
+          "ar": "الموعد حسب برنامج الماجستير. مثال موثق: تمويل Mundus MAPP حتى 1 ديسمبر 2026، 23:59 CET؛ هذا ليس موعدًا عامًا لإيراسموس.",
+          "en": "Deadline depends on the master’s programme. Verified example: Mundus MAPP financial-aid deadline is 1 December 2026, 23:59 CET; this is not an Erasmus-wide deadline."
+        },
+        "closes_time": null
+      },
+      "eligibility": {
+        "ar": "طلاب من أنحاء العالم يتقدمون مباشرة إلى برنامج مشترك مؤهل ويستوفون شروطه الأكاديمية واللغوية.",
+        "en": "Students worldwide apply directly to an eligible joint master’s programme and meet its academic and language conditions."
+      },
+      "funding": {
+        "ar": "قد تغطي المنحة تكاليف المشاركة والسفر والتأشيرة والمعيشة حسب البرنامج والجائزة.",
+        "en": "The scholarship may cover participation, travel, visa, and living costs depending on the programme and award."
+      },
+      "requirements": {
+        "ar": [
+          "طلب البرنامج المختار",
+          "شهادة بكالوريوس أو سنة أخيرة",
+          "سجل أكاديمي",
+          "إثبات لغة",
+          "سيرة وخطاب دافع",
+          "توصيات ومتطلبات البرنامج"
+        ],
+        "en": [
+          "Selected-programme application",
+          "Bachelor’s degree or final-year status",
+          "Transcript",
+          "Language proof",
+          "CV and motivation letter",
+          "References and programme-specific items"
+        ]
+      },
+      "source_url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+      "application_url": "https://www.eacea.ec.europa.eu/scholarships/erasmus-mundus-catalogue_en",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "notes": {
+        "ar": "ابدأ من الكتالوج وحدد البرنامج المؤهل لك؛ لكل برنامج شروطه، وقد تختلف أهلية التخصصات. لا تطبق شروط مثال Mundus MAPP على بقية إيراسموس.",
+        "en": "Start with the catalogue and choose an eligible programme; each has its own subject and admission rules. Do not apply the Mundus MAPP example’s requirements to all Erasmus programmes."
+      },
+      "summary": {
+        "ar": "ماجستير مشترك بين جامعات دولية؛ توجد برامج تقبل الطلبات حاليًا، ومواعيد المنح تختلف حسب البرنامج.",
+        "en": "Joint master’s programmes across international universities; some are accepting applications, with scholarship deadlines set by each programme."
+      },
+      "description": {
+        "ar": "طلاب من أنحاء العالم يتقدمون مباشرة إلى برنامج مشترك مؤهل ويستوفون شروطه الأكاديمية واللغوية. قد تغطي المنحة تكاليف المشاركة والسفر والتأشيرة والمعيشة حسب البرنامج والجائزة.",
+        "en": "Students worldwide apply directly to an eligible joint master’s programme and meet its academic and language conditions. The scholarship may cover participation, travel, visa, and living costs depending on the programme and award."
+      },
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "origin": {
+        "kind": "retained_original",
+        "original_id": "opp-018"
+      },
+      "display": {
+        "mark": "EU",
+        "color": "violet"
+      },
+      "course": null,
+      "status_scope": {
+        "ar": "توجد برامج مفتوحة، ومنها Mundus MAPP لدورة 2027–2029؛ لا تعني الحالة أن كل برامج الكتالوج مفتوحة.",
+        "en": "Some programmes are open, including Mundus MAPP for 2027–2029; this status does not mean every catalogue programme is open."
+      },
+      "evidence": [
+        {
+          "url": "https://erasmus-plus.ec.europa.eu/opportunities/individuals/students/erasmus-mundus-joint-masters",
+          "supports": [
+            "programme_specific_applications",
+            "scholarship_scope"
+          ]
+        },
+        {
+          "url": "https://www.mundusmapp.org/admissions-calendar/",
+          "supports": [
+            "open_programme_example",
+            "2027_2029_intake",
+            "financial_aid_deadline"
+          ],
+          "note": "An example within the existing Erasmus Mundus record, not an extra record or a universal deadline."
+        },
+        {
+          "url": "https://www.mundusmapp.org/how-to-apply/",
+          "supports": [
+            "emjm_scholarships_available",
+            "current_applications_open"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "course-001",
+      "slug": "cs50x",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في علوم الحاسوب — CS50x",
+        "en": "CS50’s Introduction to Computer Science — CS50x"
+      },
+      "provider": {
+        "ar": "جامعة هارفارد",
+        "en": "Harvard University"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "تعلّم أسس علوم الحاسوب وحل المشكلات والبرمجة، ثم طبّق معرفتك في تمارين عملية ومشروع نهائي.",
+        "en": "Learn computer science, problem solving and programming fundamentals, then apply your knowledge through practical exercises and a final project."
+      },
+      "description": {
+        "ar": "مسار تمهيدي يشمل الخوارزميات وهياكل البيانات، ولغات C وPython وSQL وتقنيات الويب. مواد OpenCourseWare متاحة مجانًا للدارسين من داخل هارفارد وخارجها.",
+        "en": "An introductory course covering algorithms, data structures, C, Python, SQL and web technologies. Its OpenCourseWare materials are free for learners inside and outside Harvard."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "computer_science"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "المحتوى والتعلّم عبر OpenCourseWare مجانيان؛ شراء شهادة edX الموثقة اختياري.",
+        "en": "OpenCourseWare learning and content are free; purchasing an edX verified certificate is optional."
+      },
+      "requirements": {
+        "ar": [
+          "لا تُشترط خبرة برمجية سابقة.",
+          "إنشاء حساب edX عند إرسال الحلول والمشروع للحصول على التقييم.",
+          "اتّباع تعليمات المسائل والمشروع النهائي وسياسة النزاهة الأكاديمية."
+        ],
+        "en": [
+          "No prior programming experience is required.",
+          "Create an edX account when submitting assignments and the project for feedback.",
+          "Follow assignment, final-project and academic-honesty requirements."
+        ]
+      },
+      "source_url": "https://cs50.harvard.edu/x/",
+      "application_url": "https://cs50.harvard.edu/x/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://cs50.harvard.edu/x/",
+          "supports": [
+            "free OpenCourseWare",
+            "course topics",
+            "no prior programming experience",
+            "11 curriculum weeks",
+            "edX account for submissions"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/x/certificate/",
+          "supports": [
+            "free CS50 certificate",
+            "70 percent completion thresholds"
+          ],
+          "note": "system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/courses/",
+          "supports": [
+            "free certificate and separate paid verified certificate for CS50 courses"
+          ],
+          "note": "system1"
+        },
+        {
+          "url": "https://pll.harvard.edu/course/cs50-introduction-computer-science",
+          "supports": [
+            "self-paced study"
+          ],
+          "note": "system1"
+        }
+      ],
+      "notes": {
+        "ar": "هذا تقسيم المحتوى؛ التعلّم ذاتي ولا يعني موعدًا إلزاميًا لإكماله.",
+        "en": "This describes the curriculum structure; study is self-paced rather than an eleven-week completion deadline."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "CS50",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 11,
+          "unit": "curriculum_weeks",
+          "label": {
+            "ar": "11 أسبوعًا من المحتوى",
+            "en": "11 weeks of course material"
+          }
+        },
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة CS50 مجانية عند استيفاء المتطلبات",
+            "en": "Free CS50 certificate after meeting requirements"
+          },
+          "details": {
+            "ar": "تشترط شهادة CS50 المجانية 70% على الأقل في كل مجموعة مسائل وفي المشروع النهائي. شهادة edX الموثقة خيار مختلف مدفوع.",
+            "en": "The free CS50 certificate requires at least 70% on every problem set and the final project. An edX verified certificate is a separate paid option."
+          },
+          "source_url": "https://cs50.harvard.edu/x/certificate/"
+        },
+        "subfield": "computer_science",
+        "subfield_label": {
+          "ar": "علوم الحاسوب",
+          "en": "Computer science"
+        }
+      }
+    },
+    {
+      "id": "course-002",
+      "slug": "cs50-python",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في البرمجة باستخدام Python — CS50P",
+        "en": "CS50’s Introduction to Programming with Python"
+      },
+      "provider": {
+        "ar": "جامعة هارفارد",
+        "en": "Harvard University"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "ابدأ البرمجة بلغة Python، وتدرّب على كتابة الشيفرة واختبارها ومعالجة الأخطاء والملفات وبناء البرامج الكائنية.",
+        "en": "Start programming with Python and practise writing and testing code, handling errors and files, and building object-oriented programs."
+      },
+      "description": {
+        "ar": "دورة متخصصة في Python تشمل الدوال والمتغيرات والشروط والحلقات والمكتبات والاختبارات والتعبيرات النمطية. يمكن أخذها قبل CS50x أو أثناءه أو بعده.",
+        "en": "A Python-focused course covering functions, variables, conditions, loops, libraries, tests and regular expressions. It can be taken before, alongside or after CS50x."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "python_programming"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "التعلّم ومحتوى OpenCourseWare مجانيان؛ شهادة edX الموثقة المدفوعة ليست شرطًا للتعلّم.",
+        "en": "OpenCourseWare learning and content are free; a paid edX verified certificate is not required to learn."
+      },
+      "requirements": {
+        "ar": [
+          "مناسب لمن لديهم خبرة برمجية ولمن يبدأون من الصفر.",
+          "يكفي متصفح ويب للعمل؛ ويمكن استخدام جهازك الشخصي للبرمجة.",
+          "إنشاء حساب edX عند إرسال الحلول والمشروع للتقييم."
+        ],
+        "en": [
+          "Suitable for learners with or without programming experience.",
+          "A web browser is sufficient, or you may program on your own computer.",
+          "Create an edX account when submitting assignments and the project for feedback."
+        ]
+      },
+      "source_url": "https://cs50.harvard.edu/python/",
+      "application_url": "https://cs50.harvard.edu/python/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "supports": [
+            "free OpenCourseWare",
+            "ten curriculum weeks",
+            "no prior programming experience",
+            "browser sufficient",
+            "edX account for submissions",
+            "Python curriculum"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/certificate/",
+          "supports": [
+            "free CS50 certificate",
+            "70 percent completion thresholds"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://pll.harvard.edu/course/cs50s-introduction-programming-python",
+          "supports": [
+            "available anytime",
+            "self-paced",
+            "English",
+            "introductory level",
+            "catalogue estimates nine weeks rather than curriculum unit count"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/courses/",
+          "supports": [
+            "free certificate and separate paid verified certificate for CS50 courses"
+          ],
+          "note": "system1"
+        }
+      ],
+      "notes": {
+        "ar": "منهج OpenCourseWare يذكر عشرة أسابيع، من 0 إلى 9. فهرس Harvard يذكر مدة تقديرية مختلفة قدرها 9 أسابيع؛ التعلّم ذاتي في الحالتين.",
+        "en": "OpenCourseWare specifies ten weeks, numbered 0–9. Harvard’s catalogue lists a different estimated duration of nine weeks; both describe self-paced study."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "PY",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 10,
+          "unit": "curriculum_weeks",
+          "label": {
+            "ar": "10 وحدات أسبوعية من المحتوى",
+            "en": "10 weekly curriculum units"
+          }
+        },
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة CS50 مجانية عند استيفاء المتطلبات",
+            "en": "Free CS50 certificate after meeting requirements"
+          },
+          "details": {
+            "ar": "الشهادة المجانية تتطلب 70% على الأقل في كل مسألة وفي المشروع النهائي. شهادة edX الموثقة اختيارية ومدفوعة.",
+            "en": "The free certificate requires at least 70% on every problem and the final project. The optional edX verified certificate has a fee."
+          },
+          "source_url": "https://cs50.harvard.edu/python/certificate/"
+        },
+        "subfield": "python_programming",
+        "subfield_label": {
+          "ar": "برمجة Python",
+          "en": "Python programming"
+        }
+      }
+    },
+    {
+      "id": "course-003",
+      "slug": "cs50-sql",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في قواعد البيانات باستخدام SQL",
+        "en": "CS50’s Introduction to Databases with SQL"
+      },
+      "provider": {
+        "ar": "جامعة هارفارد",
+        "en": "Harvard University"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "تعلّم تصميم قواعد البيانات العلائقية والاستعلام عنها وتعديلها، مع تطبيقات تبدأ بـSQLite وتصل إلى PostgreSQL وMySQL.",
+        "en": "Learn to design, query and modify relational databases through practical work starting with SQLite and introducing PostgreSQL and MySQL."
+      },
+      "description": {
+        "ar": "يشمل المسار نمذجة العلاقات والتطبيع والمفاتيح والقيود والعروض والفهارس. تُطبّق المفاهيم على بيانات عملية، وتُختتم الدورة بمشروع نهائي.",
+        "en": "The course covers relationships, normalisation, keys, constraints, views and indexes. Exercises use practical datasets, and the course ends with a final project."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "databases"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "محتوى OpenCourseWare والتعلّم مجانيان. شهادة edX الموثقة خدمة اختيارية مدفوعة.",
+        "en": "OpenCourseWare content and learning are free. The edX verified certificate is an optional paid service."
+      },
+      "requirements": {
+        "ar": [
+          "لا يلزم إكمال CS50x أولًا؛ يمكن أخذ SQL قبله أو أثناءه أو بعده.",
+          "اتباع المحاضرات ومجموعات المسائل والمشروع النهائي.",
+          "إنشاء حساب edX عند إرسال الحلول للتقييم."
+        ],
+        "en": [
+          "CS50x is not required first; SQL can be taken before, alongside or after it.",
+          "Work through the lectures, problem sets and final project.",
+          "Create an edX account when submitting work for feedback."
+        ]
+      },
+      "source_url": "https://cs50.harvard.edu/sql/",
+      "application_url": "https://cs50.harvard.edu/sql/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://cs50.harvard.edu/sql/",
+          "supports": [
+            "free OpenCourseWare",
+            "seven curriculum weeks",
+            "course topics",
+            "CS50x not prerequisite",
+            "edX account for submissions"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/sql/certificate/",
+          "supports": [
+            "free CS50 certificate",
+            "70 percent completion thresholds"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://pll.harvard.edu/course/cs50s-introduction-databases-sql",
+          "supports": [
+            "available anytime",
+            "self-paced",
+            "English",
+            "introductory level"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/courses/",
+          "supports": [
+            "free certificate and separate paid verified certificate for CS50 courses"
+          ],
+          "note": "system1"
+        }
+      ],
+      "notes": {
+        "ar": "التعلّم ذاتي؛ مدة المحتوى لا تمثل موعدًا نهائيًا إلزاميًا.",
+        "en": "Study is self-paced; curriculum length is not a mandatory completion deadline."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "SQL",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 7,
+          "unit": "curriculum_weeks",
+          "label": {
+            "ar": "7 أسابيع من المحتوى",
+            "en": "7 weeks of course material"
+          }
+        },
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة CS50 مجانية عند استيفاء المتطلبات",
+            "en": "Free CS50 certificate after meeting requirements"
+          },
+          "details": {
+            "ar": "تتطلب الشهادة المجانية 70% على الأقل في كل مسألة وفي المشروع النهائي؛ شهادة edX الموثقة خيار مدفوع منفصل.",
+            "en": "The free certificate requires at least 70% on every problem and the final project; an edX verified certificate is a separate paid option."
+          },
+          "source_url": "https://cs50.harvard.edu/sql/certificate/"
+        },
+        "subfield": "databases",
+        "subfield_label": {
+          "ar": "قواعد البيانات",
+          "en": "Databases"
+        }
+      }
+    },
+    {
+      "id": "course-004",
+      "slug": "elements-of-ai-introduction",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في الذكاء الاصطناعي — Elements of AI",
+        "en": "Elements of AI: Introduction to AI"
+      },
+      "provider": {
+        "ar": "جامعة هلسنكي وMinnaLearn",
+        "en": "University of Helsinki and MinnaLearn"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "افهم مفاهيم الذكاء الاصطناعي وتطبيقاته وحدوده عبر شرح وتمارين، دون الحاجة إلى برمجة أو رياضيات متقدمة.",
+        "en": "Understand AI concepts, applications and limitations through explanations and exercises, without requiring programming or advanced mathematics."
+      },
+      "description": {
+        "ar": "هذه دورة Introduction to AI، الجزء التمهيدي من Elements of AI. تجمع بين مواد ذاتية الدراسة وتمارين تفاعلية للتعرف إلى الذكاء الاصطناعي وتأثيره.",
+        "en": "This is Introduction to AI, the introductory Elements of AI course. It combines self-study materials and interactive exercises to explore artificial intelligence and its implications."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "artificial_intelligence"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "محتوى Introduction to AI وتمارينه مجانيان ويمكن متابعتهما بالوتيرة المناسبة للمتعلم.",
+        "en": "Introduction to AI content and exercises are free and can be completed at the learner’s own pace."
+      },
+      "requirements": {
+        "ar": [
+          "لا تتطلب خبرة في البرمجة أو رياضيات متقدمة.",
+          "إنشاء حساب في منصة الدورة لتسجيل التقدم.",
+          "استيفاء متطلبات التمارين ومراجعات الأقران للحصول على الشهادة."
+        ],
+        "en": [
+          "No programming experience or advanced mathematics is required.",
+          "Create a course-platform account to record progress.",
+          "Meet exercise and peer-review requirements to obtain the certificate."
+        ]
+      },
+      "source_url": "https://course.elementsofai.com/",
+      "application_url": "https://course.elementsofai.com/",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.elementsofai.com/",
+          "supports": [
+            "free introductory course",
+            "self-paced study",
+            "no programming or advanced mathematics",
+            "current provider names"
+          ],
+          "note": "system1_official_indexed_text"
+        },
+        {
+          "url": "https://course.elementsofai.com/",
+          "supports": [
+            "current English course route",
+            "course access and signup",
+            "no programming or complicated mathematics"
+          ],
+          "note": "system1_official_indexed_text"
+        },
+        {
+          "url": "https://www.elementsofai.com/faq/i-have-passed-an-elements-of-ai-course-where-is-my-certificate-2",
+          "supports": [
+            "Introduction to AI certificate is explicitly free",
+            "peer reviews affect certificate issuance",
+            "paid Building AI certificate is a separate course"
+          ],
+          "note": "system1_official_indexed_text"
+        },
+        {
+          "url": "https://www.helsinki.fi/en/news/artificial-intelligence/elements-ai-has-introduced-one-million-people-basics-artificial-intelligence",
+          "supports": [
+            "approximately 30 hours of work",
+            "free learning",
+            "course focus and audience"
+          ],
+          "note": "system1"
+        },
+        {
+          "url": "https://course.elementsofai.com/signup/",
+          "supports": [
+            "platform account registration"
+          ],
+          "note": "system1"
+        },
+        {
+          "url": "https://www.elementsofai.com/faq/i-signed-up-for-the-6-week-course-but-couldnt-finish-on-time-what-happens-now",
+          "supports": [
+            "progress remains available after the suggested six-week period"
+          ],
+          "note": "system1_official_indexed_text"
+        }
+      ],
+      "notes": {
+        "ar": "تقدير نشرته جامعة هلسنكي؛ التعلّم ذاتي وقد يختلف الوقت الفعلي.",
+        "en": "An estimate published by the University of Helsinki; actual time varies because study is self-paced."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "AI",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 30,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 30 ساعة",
+            "en": "About 30 hours"
+          }
+        },
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة رقمية مجانية بعد اجتياز الدورة",
+            "en": "Free digital certificate after passing the course"
+          },
+          "details": {
+            "ar": "الأسئلة الشائعة الرسمية تؤكد مجانية شهادة Introduction to AI. إصدارها مرتبط بإكمال المتطلبات ومراجعات الأقران؛ شهادة Building AI المدفوعة تخص دورة مختلفة.",
+            "en": "The official FAQ explicitly confirms a free Introduction to AI certificate. Issuance depends on completion and peer reviews; the paid Building AI certificate belongs to a different course."
+          },
+          "source_url": "https://www.elementsofai.com/faq/i-have-passed-an-elements-of-ai-course-where-is-my-certificate-2"
+        },
+        "subfield": "artificial_intelligence",
+        "subfield_label": {
+          "ar": "الذكاء الاصطناعي",
+          "en": "Artificial intelligence"
+        }
+      }
+    },
+    {
+      "id": "course-005",
+      "slug": "freecodecamp-responsive-web-design",
+      "type": "course",
+      "title": {
+        "ar": "تصميم الويب المتجاوب — freeCodeCamp",
+        "en": "Responsive Web Design Certification — freeCodeCamp"
+      },
+      "provider": {
+        "ar": "freeCodeCamp",
+        "en": "freeCodeCamp"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "تعلّم HTML وCSS وتصميم الصفحات المتجاوبة وإتاحة الوصول، وطبّق ما تعلمته في مشاريع ومختبرات تفاعلية.",
+        "en": "Learn HTML, CSS, responsive layouts and accessibility, then practise through interactive workshops, labs and certification projects."
+      },
+      "description": {
+        "ar": "المسار الحالي هو Responsive Web Design v9، ويشمل النماذج وFlexbox وCSS Grid. يحتوي على دروس ومراجعات واختبارات، وتؤهل مشاريع الشهادة لامتحانها.",
+        "en": "The current Responsive Web Design v9 track covers forms, Flexbox and CSS Grid. It includes lessons, reviews and quizzes, with certification projects unlocking the exam."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "web_development"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "المحتوى التعليمي والمشاريع وامتحان الشهادة مجانية وفق الإعلان الرسمي.",
+        "en": "Learning materials, projects and the certification exam are free according to the official announcement."
+      },
+      "requirements": {
+        "ar": [
+          "استخدام منصة التعلم وتنفيذ تمارين ومشاريع المسار.",
+          "إكمال مشاريع الشهادة الخمسة لفتح الامتحان.",
+          "للامتحان: تنزيل تطبيق بيئة الامتحان على كمبيوتر مكتبي أو محمول واتباع قواعده."
+        ],
+        "en": [
+          "Use the learning platform and complete track exercises and projects.",
+          "Complete the five certification projects to unlock the exam.",
+          "For the exam, download the Exam Environment app on a desktop or laptop and follow its rules."
+        ]
+      },
+      "source_url": "https://www.freecodecamp.org/learn/responsive-web-design-v9",
+      "application_url": "https://www.freecodecamp.org/learn/responsive-web-design-v9",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design-v9",
+          "supports": [
+            "current v9 course route"
+          ],
+          "note": "direct_page_route_and_official_announcement_link"
+        },
+        {
+          "url": "https://www.freecodecamp.org/news/freecodecamps-new-responsive-web-design-certification-is-now-live/",
+          "supports": [
+            "new current curriculum",
+            "all learning and certification free",
+            "five certification projects",
+            "certification exam",
+            "desktop or laptop exam app",
+            "HTML CSS accessibility Flexbox Grid",
+            "independent study structure"
+          ],
+          "note": "direct_page_and_system1"
+        },
+        {
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/exam-responsive-web-design-certification/exam-responsive-web-design-certification",
+          "supports": [
+            "current exam route",
+            "exam is free",
+            "Exam Environment app required"
+          ],
+          "note": "system1"
+        },
+        {
+          "url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/review-responsive-web-design/review-responsive-web-design",
+          "supports": [
+            "published current curriculum lesson",
+            "responsive design subject matter"
+          ],
+          "note": "system1"
+        }
+      ],
+      "notes": {
+        "ar": "التعلم ذاتي؛ لم تُثبت مدة إجمالية دقيقة للمنهج الحالي.",
+        "en": "Self-paced learning; no exact total duration was verified for the current curriculum."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "FCC",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": null,
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة مجانية بعد المشاريع والامتحان",
+            "en": "Free certification after projects and exam"
+          },
+          "details": {
+            "ar": "النسخة الجديدة تتطلب خمسة مشاريع شهادة ثم اجتياز الامتحان. ليست شهادة Legacy Responsive Web Design القديمة.",
+            "en": "The new version requires five certification projects and a passing exam. It is distinct from the old Legacy Responsive Web Design certification."
+          },
+          "source_url": "https://www.freecodecamp.org/news/freecodecamps-new-responsive-web-design-certification-is-now-live/"
+        },
+        "subfield": "web_development",
+        "subfield_label": {
+          "ar": "تطوير الويب",
+          "en": "Web development"
+        }
+      }
+    },
+    {
+      "id": "course-006",
+      "slug": "cisco-introduction-to-cybersecurity",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في الأمن السيبراني",
+        "en": "Introduction to Cybersecurity"
+      },
+      "provider": {
+        "ar": "أكاديمية سيسكو للشبكات",
+        "en": "Cisco Networking Academy"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "مدخل لحماية البيانات والخصوصية، وفهم الهجمات الرقمية والتحديات الأمنية التي تواجه المؤسسات.",
+        "en": "An introduction to protecting personal data and privacy, understanding digital attacks, and recognizing organizational security challenges."
+      },
+      "description": {
+        "ar": "مدخل لحماية البيانات والخصوصية، وفهم الهجمات الرقمية والتحديات الأمنية التي تواجه المؤسسات. فهم أساليب الهجوم وحماية الخصوصية. التعرّف إلى حماية المؤسسات والمسارات المهنية في الأمن السيبراني.",
+        "en": "An introduction to protecting personal data and privacy, understanding digital attacks, and recognizing organizational security challenges. Understand attack techniques and privacy protection. Explore organizational defense and cybersecurity career directions."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "cybersecurity"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "الدراسة مجانية وفق المصدر الرسمي. راجع حقل الشهادة لمعرفة وضعها بشكل منفصل.",
+        "en": "Learning is free according to the official source. See the separate certificate field for its terms."
+      },
+      "requirements": {
+        "ar": [
+          "الدورة مصنفة للمبتدئين؛ يبدأ التعلم الذاتي من صفحة التسجيل الرسمية."
+        ],
+        "en": [
+          "The provider classifies this as beginner level; start self-paced learning through the official enrollment page."
+        ]
+      },
+      "source_url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+      "application_url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.netacad.com/es/courses/introduction-to-cybersecurity",
+          "supports": [
+            "free_access",
+            "six_hours",
+            "beginner",
+            "self_paced",
+            "content_languages",
+            "curriculum",
+            "badge_listing"
+          ]
+        },
+        {
+          "url": "https://www.cisco.com/site/us/en/learn/training-certifications/training/netacad/index.html",
+          "supports": [
+            "free_self_paced_catalog",
+            "beginner",
+            "six_hours"
+          ]
+        }
+      ],
+      "notes": {
+        "ar": "المدة تقديرية. قد يتطلب حفظ التقدم وإنجاز التمارين حسابًا لدى المنصة؛ لم يُختبر حساب مسجل أو إصدار شهادة.",
+        "en": "Duration is an estimate. Recording progress and completing exercises may require a platform account; no signed-in account or certificate issuance was tested."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "CISCO",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "ar",
+          "id",
+          "zh-Hans",
+          "zh-Hant",
+          "de",
+          "en",
+          "es",
+          "fr",
+          "el",
+          "it",
+          "ja",
+          "ko",
+          "nl",
+          "pl",
+          "pt",
+          "ro",
+          "th",
+          "tr",
+          "uk",
+          "vi"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 6,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 6 ساعات",
+            "en": "About 6 hours"
+          }
+        },
+        "certificate": {
+          "status": "not_stated",
+          "label": {
+            "ar": "رسوم شهادة الإكمال غير موضحة",
+            "en": "Completion-certificate fees not stated"
+          },
+          "details": {
+            "ar": "تذكر الصفحة شارات إنجاز؛ لم يثبت في النص المتاح سعر شهادة الإكمال. لا تتضمن هذه المعلومة امتحان شهادة مهنية.",
+            "en": "The page lists achievement badges; the available text does not establish completion-certificate pricing. This does not include a professional certification exam."
+          },
+          "source_url": "https://www.netacad.com/courses/introduction-to-cybersecurity"
+        },
+        "subfield": "cybersecurity",
+        "subfield_label": {
+          "ar": "الأمن السيبراني",
+          "en": "Cybersecurity"
+        }
+      }
+    },
+    {
+      "id": "course-007",
+      "slug": "cisco-networking-basics",
+      "type": "course",
+      "title": {
+        "ar": "أساسيات الشبكات",
+        "en": "Networking Basics"
+      },
+      "provider": {
+        "ar": "أكاديمية سيسكو للشبكات",
+        "en": "Cisco Networking Academy"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "تعلم مكونات الشبكات والوسائط والبروتوكولات، وكيف تنتقل البيانات وتتصل الأجهزة بالشبكات.",
+        "en": "Learn network components, media, and protocols, including how data travels and devices connect to networks."
+      },
+      "description": {
+        "ar": "تعلم مكونات الشبكات والوسائط والبروتوكولات، وكيف تنتقل البيانات وتتصل الأجهزة بالشبكات. أساس في عناوين IPv4 وأنواع الشبكات والوصول اللاسلكي. تطبيق مفاهيم الشبكات عبر 13 مختبرًا مدرجًا في وصف الدورة.",
+        "en": "Learn network components, media, and protocols, including how data travels and devices connect to networks. Build a foundation in IPv4 addressing, network types, and wireless access. Practice networking concepts through the 13 labs listed by the provider."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "networking"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "الدراسة مجانية وفق المصدر الرسمي. راجع حقل الشهادة لمعرفة وضعها بشكل منفصل.",
+        "en": "Learning is free according to the official source. See the separate certificate field for its terms."
+      },
+      "requirements": {
+        "ar": [
+          "الدورة مصنفة للمبتدئين؛ اتبع تعليمات أدوات المختبرات داخل الدورة."
+        ],
+        "en": [
+          "The course is classified as beginner level; follow its lab-tool instructions."
+        ]
+      },
+      "source_url": "https://www.netacad.com/courses/networking-basics",
+      "application_url": "https://www.netacad.com/courses/networking-basics",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.netacad.com/ar/courses/networking-basics",
+          "supports": [
+            "free_access",
+            "22_hours",
+            "beginner",
+            "self_paced",
+            "content_languages",
+            "13_labs",
+            "curriculum",
+            "badge_listing"
+          ]
+        },
+        {
+          "url": "https://www.netacad.com/courses/networking-basics/1000?courseLang=en-US",
+          "supports": [
+            "course_description",
+            "content_languages",
+            "duration",
+            "delivery_format"
+          ]
+        }
+      ],
+      "notes": {
+        "ar": "المدة تقديرية. قد يتطلب حفظ التقدم وإنجاز التمارين حسابًا لدى المنصة؛ لم يُختبر حساب مسجل أو إصدار شهادة.",
+        "en": "Duration is an estimate. Recording progress and completing exercises may require a platform account; no signed-in account or certificate issuance was tested."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "NET",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "ar",
+          "zh-Hans",
+          "de",
+          "en",
+          "es",
+          "fr",
+          "ja",
+          "nl",
+          "pt",
+          "ro",
+          "uk"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 22,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 22 ساعة",
+            "en": "About 22 hours"
+          }
+        },
+        "certificate": {
+          "status": "not_stated",
+          "label": {
+            "ar": "رسوم شهادة الإكمال غير موضحة",
+            "en": "Completion-certificate fees not stated"
+          },
+          "details": {
+            "ar": "تعرض الصفحة شارات يمكن اكتسابها. لم يُذكر سعر شهادة الإكمال صراحةً في الأدلة المتاحة؛ لا تُعامل الدورة كشهادة CCNA.",
+            "en": "The page lists available badges. Completion-certificate pricing is not explicit in the available evidence; the course is not a CCNA certification."
+          },
+          "source_url": "https://www.netacad.com/courses/networking-basics"
+        },
+        "subfield": "networking",
+        "subfield_label": {
+          "ar": "الشبكات",
+          "en": "Networking"
+        }
+      }
+    },
+    {
+      "id": "course-008",
+      "slug": "cisco-introduction-to-data-science",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في علم البيانات",
+        "en": "Introduction to Data Science"
+      },
+      "provider": {
+        "ar": "أكاديمية سيسكو للشبكات",
+        "en": "Cisco Networking Academy"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "مدخل إلى علم البيانات وتحليلها وهندستها، وكيف تُستخدم البيانات والتعلم الآلي في مجالات متنوعة.",
+        "en": "Explore data science, analytics, and engineering, and how data and machine learning support different fields."
+      },
+      "description": {
+        "ar": "مدخل إلى علم البيانات وتحليلها وهندستها، وكيف تُستخدم البيانات والتعلم الآلي في مجالات متنوعة. فهم أساسيات جمع البيانات وتحليلها والتحقق منها. تجربة خمس ممارسات مختبرية مدرجة في وصف الدورة.",
+        "en": "Explore data science, analytics, and engineering, and how data and machine learning support different fields. Understand the basics of data collection, analysis, and validation. Try the five practice labs listed for the course."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "data_science"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "الدراسة مجانية وفق المصدر الرسمي. راجع حقل الشهادة لمعرفة وضعها بشكل منفصل.",
+        "en": "Learning is free according to the official source. See the separate certificate field for its terms."
+      },
+      "requirements": {
+        "ar": [
+          "لا توجد متطلبات مسبقة بحسب مقال Cisco الرسمي عن الدورة."
+        ],
+        "en": [
+          "No prerequisites, according to Cisco's official article about the course."
+        ]
+      },
+      "source_url": "https://www.netacad.com/courses/introduction-data-science?courseLang=en-US",
+      "application_url": "https://www.netacad.com/courses/introduction-data-science?courseLang=en-US",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.netacad.com/courses/introduction-data-science?courseLang=en-US",
+          "supports": [
+            "free_access",
+            "six_hours",
+            "beginner",
+            "self_paced",
+            "five_labs",
+            "curriculum",
+            "english_version"
+          ]
+        },
+        {
+          "url": "https://blogs.cisco.com/learning/top-5-takeaways-to-find-yourself-in-the-future-of-data-science",
+          "supports": [
+            "no_prerequisites",
+            "six_hours",
+            "five_labs"
+          ]
+        }
+      ],
+      "notes": {
+        "ar": "المدة تقديرية. قد يتطلب حفظ التقدم وإنجاز التمارين حسابًا لدى المنصة؛ لم يُختبر حساب مسجل أو إصدار شهادة.",
+        "en": "Duration is an estimate. Recording progress and completing exercises may require a platform account; no signed-in account or certificate issuance was tested."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "DATA",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 6,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 6 ساعات",
+            "en": "About 6 hours"
+          }
+        },
+        "certificate": {
+          "status": "not_stated",
+          "label": {
+            "ar": "رسوم شهادة الإكمال غير موضحة",
+            "en": "Completion-certificate fees not stated"
+          },
+          "details": {
+            "ar": "تظهر شارات ضمن الإنجازات؛ لا يحدد النص المتاح سعر شهادة الإكمال، لذلك لا توصف الشهادة بأنها مجانية.",
+            "en": "Badges appear under achievements, but the available text does not specify completion-certificate pricing, so a free certificate is not claimed."
+          },
+          "source_url": "https://www.netacad.com/courses/introduction-data-science?courseLang=en-US"
+        },
+        "subfield": "data_science",
+        "subfield_label": {
+          "ar": "علم البيانات",
+          "en": "Data science"
+        }
+      }
+    },
+    {
+      "id": "course-009",
+      "slug": "ndg-linux-unhatched",
+      "type": "course",
+      "title": {
+        "ar": "مدخل إلى لينكس — Linux Unhatched",
+        "en": "Linux Unhatched"
+      },
+      "provider": {
+        "ar": "Network Development Group عبر أكاديمية سيسكو للشبكات",
+        "en": "Network Development Group via Cisco Networking Academy"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "مقدمة عملية في سطر أوامر لينكس، والتنقل بين الملفات وإدارتها باستخدام بيئة لينكس داخل المتصفح.",
+        "en": "A hands-on introduction to the Linux command line and file navigation and management using a browser-based Linux environment."
+      },
+      "description": {
+        "ar": "مقدمة عملية في سطر أوامر لينكس، والتنقل بين الملفات وإدارتها باستخدام بيئة لينكس داخل المتصفح. تعلّم التنقل والنسخ ونقل الملفات بالأوامر. ممارسة مباشرة في آلة لينكس افتراضية مضمّنة.",
+        "en": "A hands-on introduction to the Linux command line and file navigation and management using a browser-based Linux environment. Learn navigation, copying, and moving files with shell commands. Practice in an included Linux virtual machine."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "linux"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "الدراسة مجانية وفق المصدر الرسمي. راجع حقل الشهادة لمعرفة وضعها بشكل منفصل.",
+        "en": "Learning is free according to the official source. See the separate certificate field for its terms."
+      },
+      "requirements": {
+        "ar": [
+          "لا توجد متطلبات تقنية مسبقة.",
+          "متصفح ويب لاستخدام بيئة لينكس المضمّنة."
+        ],
+        "en": [
+          "No technical prerequisites.",
+          "A web browser for the included Linux environment."
+        ]
+      },
+      "source_url": "https://www.netdevgroup.com/online/courses/open-source/linux-unhatched",
+      "application_url": "https://www.netacad.com/courses/linux-unhatched",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.netdevgroup.com/online/courses/open-source/linux-unhatched",
+          "supports": [
+            "free_content_and_lab",
+            "eight_hours",
+            "foundational_level",
+            "self_paced",
+            "no_prerequisites",
+            "browser_based_vm",
+            "netacad_availability"
+          ]
+        },
+        {
+          "url": "https://www.netacad.com/courses/linux-unhatched",
+          "supports": [
+            "free_access",
+            "eight_hours",
+            "beginner",
+            "self_paced"
+          ]
+        }
+      ],
+      "notes": {
+        "ar": "المدة تقديرية. قد يتطلب حفظ التقدم وإنجاز التمارين حسابًا لدى المنصة؛ لم يُختبر حساب مسجل أو إصدار شهادة.",
+        "en": "Duration is an estimate. Recording progress and completing exercises may require a platform account; no signed-in account or certificate issuance was tested."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "LINUX",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 8,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 8 ساعات",
+            "en": "About 8 hours"
+          }
+        },
+        "certificate": {
+          "status": "not_stated",
+          "label": {
+            "ar": "رسوم شهادة الإكمال غير موضحة",
+            "en": "Completion-certificate fees not stated"
+          },
+          "details": {
+            "ar": "المحتوى والمختبر مجانيان وفق NDG؛ لم يُحدد سعر شهادة الإكمال في صفحة الدورة، ولا يُدّعى شمول امتحان LPI.",
+            "en": "NDG lists the content and lab as free; the course page does not specify completion-certificate pricing or include an LPI exam claim."
+          },
+          "source_url": "https://www.netdevgroup.com/online/courses/open-source/linux-unhatched"
+        },
+        "subfield": "linux",
+        "subfield_label": {
+          "ar": "لينكس",
+          "en": "Linux"
+        }
+      }
+    },
+    {
+      "id": "course-010",
+      "slug": "kaggle-intro-to-machine-learning",
+      "type": "course",
+      "title": {
+        "ar": "مقدمة في التعلم الآلي",
+        "en": "Intro to Machine Learning"
+      },
+      "provider": {
+        "ar": "Kaggle Learn",
+        "en": "Kaggle Learn"
+      },
+      "country": {
+        "ar": "عبر الإنترنت",
+        "en": "Online"
+      },
+      "summary": {
+        "ar": "تعرّف إلى كيفية عمل النماذج، واستكشف البيانات، ثم ابنِ نموذج تعلم آلي أوليًا عبر دروس وتمارين.",
+        "en": "Learn how models work, explore data, and build a first machine-learning model through tutorials and exercises."
+      },
+      "description": {
+        "ar": "تعرّف إلى كيفية عمل النماذج، واستكشف البيانات، ثم ابنِ نموذج تعلم آلي أوليًا عبر دروس وتمارين. تطبيق استكشاف البيانات وبناء نموذج أول. شهادة إكمال لدورة Kaggle Learn المجانية وفق وصف المنصة.",
+        "en": "Learn how models work, explore data, and build a first machine-learning model through tutorials and exercises. Practice data exploration and build a first model. Earn a completion certificate for the no-cost Kaggle Learn course, as described by the platform."
+      },
+      "levels": [
+        "beginner"
+      ],
+      "fields": [
+        "technology",
+        "machine_learning"
+      ],
+      "status": "self_paced",
+      "status_scope": {
+        "ar": "محتوى تعلم متاح ذاتيًا في تاريخ فحص المصدر؛ التوافر خاضع لسياسة المنصة.",
+        "en": "Self-directed learning content available at the source-check date; availability follows platform policy."
+      },
+      "deadline": {
+        "type": "none",
+        "opens_at": null,
+        "closes_at": null,
+        "closes_time": null,
+        "timezone": null,
+        "note": {
+          "ar": "تعلّم ذاتي؛ لا يُعرض موعد تسجيل عام غير موثق. مدة المحتوى ليست موعد إغلاق.",
+          "en": "Self-paced; no unverified general enrollment deadline is shown. Curriculum duration is not an application deadline."
+        }
+      },
+      "eligibility": {
+        "ar": "راجع المتطلبات أدناه وشروط المنصة. تعريب هذه البطاقة لا يعني أن كل مواد الدورة عربية.",
+        "en": "Review the requirements below and the platform terms. An Arabic listing does not imply every course resource is in Arabic."
+      },
+      "funding": {
+        "ar": "الدراسة مجانية وفق المصدر الرسمي. راجع حقل الشهادة لمعرفة وضعها بشكل منفصل.",
+        "en": "Learning is free according to the official source. See the separate certificate field for its terms."
+      },
+      "requirements": {
+        "ar": [
+          "معرفة أساسيات Python مفيدة للتمارين؛ هذه توصية تحضيرية وليست شرط قبول موثقًا."
+        ],
+        "en": [
+          "Basic Python familiarity is useful for the exercises; this is preparation advice, not a verified admission requirement."
+        ]
+      },
+      "source_url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "application_url": "https://www.kaggle.com/learn/intro-to-machine-learning",
+      "verified_at": "2026-10-21",
+      "verification_method": "automated_official_source_review",
+      "human_review": {
+        "status": "pending",
+        "reviewed_at": null,
+        "reviewer": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.kaggle.com/learn/intro-to-machine-learning/exercise",
+          "supports": [
+            "matching_course_title",
+            "three_hour_estimate",
+            "tutorial_exercise_format",
+            "initial_curriculum",
+            "english_content"
+          ]
+        },
+        {
+          "url": "https://www.kaggle.com/learn",
+          "supports": [
+            "current_course_listing",
+            "no_cost_courses",
+            "completion_certificates"
+          ]
+        },
+        {
+          "url": "https://www.kaggle.com/?ref=shujaz",
+          "supports": [
+            "signed_certificates_in_no_cost_courses"
+          ]
+        }
+      ],
+      "notes": {
+        "ar": "دروس وتمارين متاحة عند الطلب؛ وصف التعلم الذاتي استنتاج من هذا النمط. استُخدمت صفحة التمارين المطابقة ودليل Learn لأن بعض نتائج الاستخراج أعادت محتوى دورة مختلفة.",
+        "en": "Lessons and exercises are available on demand; self-paced delivery is inferred from that format. Matching exercises and the Learn directory were used because some extracted pages returned another course’s content."
+      },
+      "origin": {
+        "kind": "new_course",
+        "original_id": null
+      },
+      "display": {
+        "mark": "K",
+        "color": "gold"
+      },
+      "course": {
+        "free_access": true,
+        "content_languages": [
+          "en"
+        ],
+        "language_scope": "verified_subset",
+        "duration": {
+          "value": 3,
+          "unit": "hours",
+          "label": {
+            "ar": "نحو 3 ساعات",
+            "en": "About 3 hours"
+          }
+        },
+        "certificate": {
+          "status": "free",
+          "label": {
+            "ar": "شهادة إكمال مجانية وفق وصف المنصة",
+            "en": "Free completion certificate according to the platform"
+          },
+          "details": {
+            "ar": "تصف Kaggle دوراتها بأنها مجانية وتتيح شهادة إكمال؛ المقصود شهادة الدورة، وليس اعتمادًا مهنيًا خارجيًا.",
+            "en": "Kaggle describes its courses as no-cost with completion certificates; this is a course certificate, not an external professional credential."
+          },
+          "source_url": "https://www.kaggle.com/learn"
+        },
+        "subfield": "machine_learning",
+        "subfield_label": {
+          "ar": "التعلم الآلي",
+          "en": "Machine learning"
+        }
+      }
+    }
+  ]
+}

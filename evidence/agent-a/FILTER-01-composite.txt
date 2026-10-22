@@ -1,0 +1,17 @@
+Test ID: FILTER-01
+Date: 2026-10-21
+Scope: Composite multi-layer AND filtering
+Result: PASS
+
+Details:
+1. Applied filters:
+   - Type: scholarship
+   - Field: technology
+   - Place: abroad
+2. Expected matches:
+   - opp-004 (MBZUAI PhD)
+   - opp-005 (MBZUAI Computational Biology)
+   - opp-002 (KAUST Fellowship)
+3. Verified that every card satisfies all active filters simultaneously (AND logic).
+4. Removing a single filter does not reset other filters.
+5. All filter values are localized (no raw schema keys presented to users).

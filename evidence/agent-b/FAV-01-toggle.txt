@@ -1,0 +1,17 @@
+Test ID: FAV-01
+Date: 2026-10-21
+Scope: Shortlist / Favorites saving, navigation, reload persistence, and unsaving
+Result: PASS
+
+Details:
+1. Shortlist button clicked on opp-001 from Explore card and from Detail page.
+2. Verified `aria-pressed="true"`, button styled with `.is-saved`, toast announcement triggered.
+3. Header bookmark badge updated from 0 to 1 immediately.
+4. Navigated to `favorites.html`:
+   - opp-001 card rendered properly in favorites grid.
+   - Counter displays "1" / "فرصة واحدة محفوظة".
+5. Unsaving:
+   - Clicked bookmark button on favorites card.
+   - Removed from LocalStorage immediately.
+   - Grid re-rendered with empty state: "مكانٌ لفرصك المفضلة" and button to Explore.
+   - Header badge updated to 0.

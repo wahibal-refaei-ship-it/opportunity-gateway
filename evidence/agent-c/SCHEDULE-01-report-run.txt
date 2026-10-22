@@ -1,0 +1,19 @@
+Test ID: SCHEDULE-01
+Date: 2026-10-21
+Scope: Weekly scheduled data report execution and data immutability verification
+Result: PASS
+
+Details:
+1. Scheduled task specification:
+   - Name: `Opportunity Gateway 2 — Weekly Data Review`
+   - Frequency: Every Monday at 09:00 Asia/Aden (06:00 UTC)
+   - Command: `node scripts/weekly-report.mjs`
+2. Test run execution:
+   - Output: generated valid Markdown review of all 20 records.
+   - Identified 1 deadline closing within 14 days (opp-001, 11 days remaining).
+   - Identified 3 variable deadline records (opp-006, opp-007, opp-018).
+   - Correctly reported 20 records with pending human review.
+3. Immutability check:
+   - SHA256 before run: 1BDA5603A19B3AA2152FBA63804D1795405EBF91219F3FD547E1FF8A87FEB4C2
+   - SHA256 after run:  1BDA5603A19B3AA2152FBA63804D1795405EBF91219F3FD547E1FF8A87FEB4C2
+   - Zero byte modification to canonical dataset.

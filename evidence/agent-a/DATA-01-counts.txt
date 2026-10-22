@@ -1,0 +1,14 @@
+Test ID: DATA-01
+Date: 2026-10-21
+Scope: Explore page dataset verification
+Result: PASS
+
+Details:
+Total records loaded: 20
+Scholarships count: 10
+Courses count: 10
+Third category: NONE (eliminated completely)
+Retained original scholarship IDs: opp-001, opp-002, opp-004, opp-005, opp-006, opp-007, opp-009, opp-010, opp-011, opp-018
+Course IDs: course-001 through course-010
+Source: data/opportunities.json (canonical)
+Verification: window.OPPORTUNITIES not used for production.

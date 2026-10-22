@@ -1,0 +1,13 @@
+Test ID: OFF-03
+Date: 2026-10-21
+Scope: Service Worker cache update and cache key isolation
+Result: PASS
+
+Details:
+1. Cache naming: `og2-cache-v1`.
+2. Activation policy:
+   - Deletes only caches matching prefix `og2-` that differ from current cache version.
+   - Foreign caches or other apps sharing the origin are preserved.
+   - User's shortlist in LocalStorage is strictly unaffected by cache eviction.
+3. Update notification:
+   - When new worker version is detected, a toast notice announces availability.

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self';">
+  <meta name="theme-color" content="#55318A">
+  <meta name="description" content="بوابة الفرص ٢: استكشف المنح الدراسية والدورات التقنية المجانية بمعلومات موثقة وروابط مباشرة.">
+  <title>استكشف الفرص | بوّابة الفرص </title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/list.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
+
+  <div id="offline-banner" class="offline-banner hidden" role="status" aria-live="polite">
+    <span data-ar="أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية." data-en="You are offline. An internet connection is needed for official links.">أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية.</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="بوابة الفرص — الرئيسية" data-label-ar="بوابة الفرص — الرئيسية" data-label-en="Opportunity Gateway — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M17 31V19a3 3 0 0 1 6 0v12" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="29.5" cy="9.5" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="بداية جديدة لطموحك" data-en="A new beginning for your ambition">بداية جديدة لطموحك</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي" data-label-ar="التنقل الرئيسي" data-label-en="Main navigation">
+        <a href="index.html" class="nav-link is-active" aria-current="page">
+          <span data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <span data-ar="المفضلة" data-en="Saved">المفضلة</span>
+          <span id="saved-count" class="saved-count">0</span>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span data-ar="عن البوابة" data-en="About">عن البوابة</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="language-button" class="language-button" type="button" aria-label="Switch to English" lang="en">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/>
+          </svg>
+          <span>English</span>
+        </button>
+
+        <button id="header-search-cta" class="btn btn-primary header-cta" type="button">
+          <span data-ar="ابحث عن فرصتك" data-en="Find your next step">ابحث عن فرصتك</span>
+          <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button id="menu-button" class="icon-button menu-button" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="فتح القائمة" data-label-ar="فتح القائمة" data-label-en="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="التنقل على الهاتف" data-label-ar="التنقل على الهاتف" data-label-en="Mobile navigation">
+      <a href="index.html" class="nav-link is-active" aria-current="page">
+        <span data-ar="اكتشف الفرص" data-en="Explore opportunities">اكتشف الفرص</span>
+      </a>
+      <a href="favorites.html" class="nav-link">
+        <span data-ar="المفضلة" data-en="Saved opportunities">المفضلة</span>
+      </a>
+      <a href="about.html" class="nav-link">
+        <span data-ar="عن البوابة" data-en="About the gateway">عن البوابة</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-line" aria-hidden="true"></span>
+            <span data-ar="مساحة أكبر لطموحك" data-en="MORE ROOM FOR YOUR AMBITION">مساحة أكبر لطموحك</span>
+          </div>
+          <h1>
+            <span data-ar="فرصتك القادمة،" data-en="Your next chapter">فرصتك القادمة،</span><br>
+            <span class="hero-accent" data-ar="تبدأ من هنا." data-en="starts here.">تبدأ من هنا.</span>
+          </h1>
+          <p class="hero-description" data-ar="عشر منح دراسية دولية مختارة، وعشر دورات تقنية مجانية لبناء مهاراتك. بيانات موثقة ومعلومات واضحة تأخذك نحو خطوتك التالية." data-en="Ten selected international scholarships and ten free tech courses. Verified data and transparent guidance for your next step.">
+            عشر منح دراسية دولية مختارة، وعشر دورات تقنية مجانية لبناء مهاراتك. بيانات موثقة ومعلومات واضحة تأخذك نحو خطوتك التالية.
+          </p>
+
+          <form id="search-form" class="search-box" role="search">
+            <svg class="icon search-symbol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <path d="m16 16 4.5 4.5" stroke-linecap="round"/>
+            </svg>
+            <label for="search-input" class="sr-only" data-ar="ابحث عن فرصة أو جهة أو مجال" data-en="Search for an opportunity, provider or field">ابحث عن فرصة أو جهة أو مجال</label>
+            <input id="search-input" type="search" autocomplete="off" placeholder="ما الفرصة التي تبحث عنها؟" data-placeholder-ar="ما الفرصة التي تبحث عنها؟" data-placeholder-en="What would you like to explore?">
+            <button class="btn btn-primary" type="submit">
+              <span data-ar="استكشف" data-en="Search">استكشف</span>
+              <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <div class="hero-trust">
+            <span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M12 3 4.5 6v5c0 5 7.5 10 7.5 10s7.5-5 7.5-10V6L12 3Z" stroke-linejoin="round"/>
+                <path d="m8.5 12 2.5 2.5 4.5-5" stroke-linecap="round"/>
+              </svg>
+              <span data-ar="روابط المصادر الرسمية" data-en="Official source links">روابط المصادر الرسمية</span>
+            </span>
+            <span class="trust-divider" aria-hidden="true"></span>
+            <span>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M6 3h12v18l-6-4-6 4V3Z" stroke-linejoin="round"/>
+              </svg>
+              <span data-ar="احفظ ما يهمك في المتصفح" data-en="Save in your browser">احفظ ما يهمك في المتصفح</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-caption">
+            <span class="caption-star" aria-hidden="true">✦</span>
+            <span data-ar="الخطوة الصغيرة تفتح أبوابًا كبيرة" data-en="Small steps. New possibilities.">الخطوة الصغيرة تفتح أبوابًا كبيرة</span>
+          </div>
+          <img class="gateway-art" src="assets/icons/gateway.svg" width="520" height="440" alt="بوابة بنفسجية مفتوحة نحو آفاق جديدة" data-label-ar="بوابة بنفسجية مفتوحة نحو آفاق جديدة" data-label-en="A purple gateway opening towards new possibilities">
+          <a class="featured-mini" href="detail.html?id=course-001">
+            <span class="mini-mark">CS50</span>
+            <span class="mini-copy">
+              <small data-ar="مهارة جديدة، بداية مختلفة" data-en="A new skill. A fresh start.">مهارة جديدة، بداية مختلفة</small>
+              <strong data-ar="ابدأ رحلتك في البرمجة" data-en="Start your coding journey">ابدأ رحلتك في البرمجة</strong>
+            </span>
+            <span class="mini-arrow" aria-hidden="true">
+              <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exactly TWO pathways: Scholarships and Free Courses -->
+    <div class="container pathway-wrap">
+      <div class="pathways" aria-label="مسارات الفرص" data-label-ar="مسارات الفرص" data-label-en="Opportunity pathways">
+        <button class="pathway" type="button" data-pathway-kind="scholarship">
+          <span class="pathway-icon violet">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="m2 9 10-5 10 5-10 5L2 9Z" stroke-linejoin="round"/>
+              <path d="M6 11v6c3 3 9 3 12 0v-6M22 9v7" stroke-linecap="round"/>
+            </svg>
+          </span>
+          <span class="pathway-copy">
+            <strong data-ar="منح دراسية" data-en="Scholarships">منح دراسية</strong>
+            <small data-ar="أفق أوسع لمستقبلك الأكاديمي" data-en="A wider academic horizon">أفق أوسع لمستقبلك الأكاديمي</small>
+          </span>
+          <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <button class="pathway" type="button" data-pathway-kind="course">
+          <span class="pathway-icon gold">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M3 4h5a4 4 0 0 1 4 4v13a5 5 0 0 0-4-2H3V4ZM21 4h-5a4 4 0 0 0-4 4v13a5 5 0 0 1 4-2h5V4Z" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="pathway-copy">
+            <strong data-ar="دورات تقنية مجانية" data-en="Free Tech Courses">دورات تقنية مجانية</strong>
+            <small data-ar="مهارة جديدة، بخطوتك أنت" data-en="Build a skill at your pace">مهارة جديدة، بخطوتك أنت</small>
+          </span>
+          <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Explore & Listing Section -->
+    <section class="explore-section container" id="opportunities" aria-labelledby="results-heading">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow subtle">
+            <span data-ar="خطوتك التالية" data-en="YOUR NEXT STEP">خطوتك التالية</span>
+          </div>
+          <h2 id="results-heading" data-ar="اكتشف ما يناسب طموحك" data-en="Discover your next possibility">اكتشف ما يناسب طموحك</h2>
+          <p data-ar="منح ودورات مختارة بدقة، ومعلومات واضحة ومباشرة تساعدك على الاختيار." data-en="Carefully selected opportunities and programmes with transparent information.">منح ودورات مختارة بدقة، ومعلومات واضحة ومباشرة تساعدك على الاختيار.</p>
+        </div>
+        <span class="section-label">
+          <span aria-hidden="true">↗</span>
+          <span data-ar="لكل بداية فرصة" data-en="Every beginning, a possibility">لكل بداية فرصة</span>
+        </span>
+      </div>
+
+      <div class="listing-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filters" id="filters">
+          <div class="filter-heading">
+            <h3 data-ar="خصّص بحثك" data-en="Refine your search">خصّص بحثك</h3>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M4 7h16M4 17h16M8 4v6M16 14v6" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="filter-field">
+            <label for="field-filter" data-ar="المجال والتخصص" data-en="Field">المجال والتخصص</label>
+            <select id="field-filter">
+              <option value="all" data-ar="جميع المجالات" data-en="All fields">جميع المجالات</option>
+              <option value="technology" data-ar="التقنية والحاسوب" data-en="Technology & computing">التقنية والحاسوب</option>
+              <option value="business" data-ar="الأعمال والإدارة" data-en="Business & management">الأعمال والإدارة</option>
+              <option value="general" data-ar="تخصصات متعددة" data-en="Multiple fields">تخصصات متعددة</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="place-filter" data-ar="مكان الفرصة" data-en="Location">مكان الفرصة</label>
+            <select id="place-filter">
+              <option value="all" data-ar="كل الأماكن" data-en="All locations">كل الأماكن</option>
+              <option value="online" data-ar="عبر الإنترنت" data-en="Online">عبر الإنترنت</option>
+              <option value="abroad" data-ar="دراسة خارجية" data-en="Study abroad">دراسة خارجية</option>
+              <option value="mixed" data-ar="بحسب البرنامج" data-en="Varies by programme">بحسب البرنامج</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="level-filter" data-ar="المستوى الدراسي" data-en="Study Level">المستوى الدراسي</label>
+            <select id="level-filter">
+              <option value="all" data-ar="جميع المستويات" data-en="All levels">جميع المستويات</option>
+              <option value="bachelor" data-ar="بكالوريوس" data-en="Bachelor’s">بكالوريوس</option>
+              <option value="master" data-ar="ماجستير" data-en="Master’s">ماجستير</option>
+              <option value="phd" data-ar="دكتوراه" data-en="PhD">دكتوراه</option>
+              <option value="beginner" data-ar="مبتدئ (دورات)" data-en="Beginner (courses)">مبتدئ (دورات)</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="status-filter" data-ar="حالة التسجيل" data-en="Registration Status">حالة التسجيل</label>
+            <select id="status-filter">
+              <option value="all" data-ar="جميع الحالات" data-en="All statuses">جميع الحالات</option>
+              <option value="open" data-ar="مفتوحة عند الفحص" data-en="Open at check date">مفتوحة عند الفحص</option>
+              <option value="self_paced" data-ar="تعلّم ذاتي مستمر" data-en="Self-paced learning">تعلّم ذاتي مستمر</option>
+              <option value="upcoming" data-ar="قادمة" data-en="Upcoming">قادمة</option>
+            </select>
+          </div>
+
+          <div class="filter-field">
+            <label for="deadline-filter" data-ar="الموعد النهائي" data-en="Deadline range">الموعد النهائي</label>
+            <select id="deadline-filter">
+              <option value="all" data-ar="كل المواعيد" data-en="All deadlines">كل المواعيد</option>
+              <option value="14_days" data-ar="ينتهي خلال 14 يومًا" data-en="Closing within 14 days">ينتهي خلال 14 يومًا</option>
+              <option value="30_days" data-ar="ينتهي خلال 30 يومًا" data-en="Closing within 30 days">ينتهي خلال 30 يومًا</option>
+            </select>
+          </div>
+
+          <!-- Course-specific subfilters -->
+          <div id="course-filter-group" class="filter-field">
+            <label for="course-lang-filter" data-ar="لغة محتوى الدورة" data-en="Course content language">لغة محتوى الدورة</label>
+            <select id="course-lang-filter">
+              <option value="all" data-ar="جميع اللغات" data-en="All languages">جميع اللغات</option>
+              <option value="ar" data-ar="العربية متاحة" data-en="Arabic available">العربية متاحة</option>
+              <option value="en" data-ar="الإنجليزية" data-en="English">الإنجليزية</option>
+            </select>
+          </div>
+
+          <label class="filter-checkbox" id="free-cert-wrapper">
+            <input type="checkbox" id="free-cert-filter">
+            <span data-ar="شهادة مجانية مثبتة فقط" data-en="Verified free certificate only">شهادة مجانية مثبتة فقط</span>
+          </label>
+
+          <button id="clear-filters" class="reset-button" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <path d="M3 10a9 9 0 1 1 1 7M3 4v6h6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-ar="إعادة ضبط الفلاتر" data-en="Reset filters">إعادة ضبط الفلاتر</span>
+          </button>
+
+          <div class="filter-note">
+            <span class="note-icon" aria-hidden="true">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="m12 3 8 4v5c0 4-8 9-8 9s-8-5-8-9V7l8-4Z"/>
+                <path d="m8 12 3 3 5-6"/>
+              </svg>
+            </span>
+            <strong data-ar="ابدأ بالمعلومة الصحيحة" data-en="Start with the right information">ابدأ بالمعلومة الصحيحة</strong>
+            <p data-ar="لكل فرصة مصدر رسمي مرفق. نوصي بمراجعة الشروط والمواعيد لدى الجهة قبل تقديم الطلب." data-en="Every opportunity links to its official source. Review provider requirements and dates before applying.">لكل فرصة مصدر رسمي مرفق. نوصي بمراجعة الشروط والمواعيد لدى الجهة قبل تقديم الطلب.</p>
+          </div>
+        </aside>
+
+        <!-- Main Listing Content -->
+        <div class="listing-content">
+          <!-- Exactly TWO category tabs (+ all) -->
+          <div class="category-tabs" role="group" aria-label="نوع الفرصة" data-label-ar="نوع الفرصة" data-label-en="Opportunity type">
+            <button class="category-tab is-active" type="button" data-kind="all" aria-pressed="true">
+              <span data-ar="جميع الفرص" data-en="All opportunities">جميع الفرص</span>
+            </button>
+            <button class="category-tab" type="button" data-kind="scholarship" aria-pressed="false">
+              <span data-ar="المنح الدراسية" data-en="Scholarships">المنح الدراسية</span>
+            </button>
+            <button class="category-tab" type="button" data-kind="course" aria-pressed="false">
+              <span data-ar="الدورات المجانية" data-en="Free Courses">الدورات المجانية</span>
+            </button>
+          </div>
+
+          <div class="results-toolbar">
+            <span id="results-count" class="results-count" role="status" aria-live="polite"></span>
+
+            <div class="toolbar-controls">
+              <button type="button" id="filter-toggle" class="filter-toggle" aria-controls="filters" aria-expanded="false">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                  <path d="M4 7h16M4 17h16M8 4v6M16 14v6" stroke-linecap="round"/>
+                </svg>
+                <span data-ar="الفلاتر" data-en="Filters">الفلاتر</span>
+              </button>
+
+              <label for="sort-select" class="sort-label">
+                <span data-ar="الترتيب:" data-en="Sort:">الترتيب:</span>
+                <select id="sort-select">
+                  <option value="recommended" data-ar="مختارات البوابة" data-en="Featured">مختارات البوابة</option>
+                  <option value="title" data-ar="أبجديًا بالاسم" data-en="Alphabetically">أبجديًا بالاسم</option>
+                  <option value="deadline" data-ar="أقرب موعد معلوم" data-en="Closest deadline">أقرب موعد معلوم</option>
+                  <option value="verified" data-ar="الأحدث فحصًا" data-en="Recently checked">الأحدث فحصًا</option>
+                </select>
+              </label>
+            </div>
+          </div>
+
+          <div id="active-filters" class="active-filters" aria-label="الفلاتر الفعالة" data-label-ar="الفلاتر الفعالة" data-label-en="Active filters"></div>
+
+          <div id="results-grid" class="opportunity-grid"></div>
+
+          <div class="results-end">
+            <span></span>
+            <p data-ar="قد تكون البداية التي تبحث عنها هنا." data-en="Your next beginning might be right here.">قد تكون البداية التي تبحث عنها هنا.</p>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journey Banner -->
+    <section class="container journey-section">
+      <div class="journey-banner">
+        <span class="journey-mark" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none">
+            <path d="M18 64V35a22 22 0 0 1 44 0v29M31 64V36a9 9 0 0 1 18 0v28" stroke="currentColor" stroke-width="3"/>
+            <path d="M12 65h56" stroke="currentColor" stroke-width="3"/>
+            <circle cx="63" cy="15" r="7" fill="#D6AE6A"/>
+          </svg>
+        </span>
+        <div>
+          <h2 data-ar="لا تحتاج إلى معرفة كل الطريق." data-en="You don’t need to see the whole path.">لا تحتاج إلى معرفة كل الطريق.</h2>
+          <p data-ar="ابدأ بفرصة واحدة، واحفظ ما يلهمك في المتصفح، وعد إليه عندما تكون جاهزًا للتقديم." data-en="Start with one possibility. Save what inspires you in your browser, and return when ready.">ابدأ بفرصة واحدة، واحفظ ما يلهمك في المتصفح، وعد إليه عندما تكون جاهزًا للتقديم.</p>
+        </div>
+        <a class="btn btn-light" href="favorites.html">
+          <span data-ar="اذهب إلى مفضلتك" data-en="View your saved list">اذهب إلى مفضلتك</span>
+          <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13M17 31V19a3 3 0 0 1 6 0v12M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="30" cy="9" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="لكل طموح، بداية." data-en="Every ambition has a beginning.">لكل طموح، بداية.</small>
+        </span>
+      </a>
+
+      <nav class="footer-nav" aria-label="روابط التذييل" data-label-ar="روابط التذييل" data-label-en="Footer navigation">
+        <a href="index.html" data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</a>
+        <a href="favorites.html" data-ar="المفضلة" data-en="Saved">المفضلة</a>
+        <a href="about.html" data-ar="عن البوابة" data-en="About">عن البوابة</a>
+      </nav>
+
+      <p class="footer-motto">
+        <span data-ar="اصنع خطوتك التالية." data-en="Make your next move.">اصنع خطوتك التالية.</span>
+        <span aria-hidden="true">✦</span>
+      </p>
+    </div>
+
+    <div class="container footer-bottom">
+      <span data-ar="بوّابة الفرص · النسخة الثانية (2026)" data-en="Opportunity Gateway · Second Edition (2026)">بوّابة الفرص · النسخة الثانية (2026)</span>
+      <span data-ar="المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط." data-en="Official sources are the final reference for details, deadlines, and terms.">المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط.</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript>
+    <div class="no-script">يرجى تفعيل JavaScript لتجربة البحث والتنقل وحفظ الفرص. Please enable JavaScript to explore and save opportunities.</div>
+  </noscript>
+</body>
+</html>

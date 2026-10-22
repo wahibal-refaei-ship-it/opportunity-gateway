@@ -1,0 +1,14 @@
+Test ID: FILTER-02
+Date: 2026-10-21
+Scope: Course-specific filters (Content Language & Free Certificate)
+Result: PASS
+
+Details:
+1. Active kind: course (10 courses)
+2. Free certificate checkbox selected:
+   - Matches: course-001, course-002, course-003, course-004, course-005, course-010 (6 items with confirmed free certificate status).
+   - Excludes: courses with status 'not_stated' (Cisco/NDG) or 'paid'.
+3. Content language filter = 'ar':
+   - Matches courses listing 'ar' in course.content_languages: course-004, course-005, course-006, course-007, course-008.
+4. Switching category tab to scholarships:
+   - Course-specific filter controls are safely hidden/disabled and do not cause scholarships to be silently filtered out.

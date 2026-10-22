@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self';">
+  <meta name="theme-color" content="#55318A">
+  <meta name="description" content="عن بوابة الفرص ٢: رؤية المشروع، منهجية تدقيق البيانات والمصادر، والخصوصية، والعمل دون اتصال.">
+  <title>عن البوابة | بوّابة الفرص ٢</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="module" src="assets/js/about.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-ar="انتقل إلى المحتوى" data-en="Skip to content">انتقل إلى المحتوى</a>
+
+  <div id="offline-banner" class="offline-banner hidden" role="status" aria-live="polite">
+    <span data-ar="أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية." data-en="You are offline. An internet connection is needed for official links.">أنت دون اتصال الآن. ستحتاج إلى الإنترنت لزيارة الروابط الرسمية.</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="بوابة الفرص — الرئيسية" data-label-ar="بوابة الفرص — الرئيسية" data-label-en="Opportunity Gateway — home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+            <path d="M17 31V19a3 3 0 0 1 6 0v12" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="29.5" cy="9.5" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="بداية جديدة لطموحك" data-en="A new beginning for your ambition">بداية جديدة لطموحك</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="التنقل الرئيسي" data-label-ar="التنقل الرئيسي" data-label-en="Main navigation">
+        <a href="index.html" class="nav-link">
+          <span data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</span>
+        </a>
+        <a href="favorites.html" class="nav-link">
+          <span data-ar="المفضلة" data-en="Saved">المفضلة</span>
+          <span id="saved-count" class="saved-count">0</span>
+        </a>
+        <a href="about.html" class="nav-link is-active" aria-current="page">
+          <span data-ar="عن البوابة" data-en="About">عن البوابة</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="language-button" class="language-button" type="button" aria-label="Switch to English" lang="en">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3a17 17 0 0 1 0 18 17 17 0 0 1 0-18Z"/>
+          </svg>
+          <span>English</span>
+        </button>
+
+        <button id="menu-button" class="icon-button menu-button" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="فتح القائمة" data-label-ar="فتح القائمة" data-label-en="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" hidden aria-label="التنقل على الهاتف" data-label-ar="التنقل على الهاتف" data-label-en="Mobile navigation">
+      <a href="index.html" class="nav-link">
+        <span data-ar="اكتشف الفرص" data-en="Explore opportunities">اكتشف الفرص</span>
+      </a>
+      <a href="favorites.html" class="nav-link">
+        <span data-ar="المفضلة" data-en="Saved opportunities">المفضلة</span>
+      </a>
+      <a href="about.html" class="nav-link is-active" aria-current="page">
+        <span data-ar="عن البوابة" data-en="About the gateway">عن البوابة</span>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="about-hero container">
+      <div class="eyebrow">
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span data-ar="معلومة موثقة، لخطوة واثقة" data-en="VERIFIED DATA FOR CONFIDENT STEPS">معلومة موثقة، لخطوة واثقة</span>
+      </div>
+      <h1>
+        <span data-ar="الفرصة الحقيقية تبدأ" data-en="A genuine opportunity begins">الفرصة الحقيقية تبدأ</span><br>
+        <span class="hero-accent" data-ar="بمعلومة صادقة ومصدر معتمد." data-en="with honest data and official sources.">بمعلومة صادقة ومصدر معتمد.</span>
+      </h1>
+      <p data-ar="بوابة الفرص ٢ هي مبادرة مستقلة تركز على تمكين الطلبة والخريجين من الوصول إلى مسارات تعليمية وأكاديمية جادة. نوفر عشر منح دراسية دولية مختارة وعشر دورات تقنية مجانية، بعيدًا عن الوعود الوهمية والبيانات غير المؤكدة." data-en="Opportunity Gateway 2 is an independent initiative empowering students and graduates to access serious academic and educational pathways. We curate ten international scholarships and ten free tech courses with verifiable official provenance.">
+        بوابة الفرص ٢ هي مبادرة مستقلة تركز على تمكين الطلبة والخريجين من الوصول إلى مسارات تعليمية وأكاديمية جادة. نوفر عشر منح دراسية دولية مختارة وعشر دورات تقنية مجانية، بعيدًا عن الوعود الوهمية والبيانات غير المؤكدة.
+      </p>
+    </div>
+
+    <div class="container about-body">
+      <!-- Core Principles -->
+      <section class="about-values" aria-label="مبادئ البوابة" data-label-ar="مبادئ البوابة" data-label-en="Gateway values">
+        <article class="value-card">
+          <span class="value-number">01</span>
+          <h2 data-ar="الصدق قبل كل شيء" data-en="Transparency First">الصدق قبل كل شيء</h2>
+          <p data-ar="لا نطلق شارة «تم التحقق بشريًا» دون مراجعة بشرية فعلية مكتملة. البيانات الحالية تمثل فحصًا آليًا للمصادر الرسمية بتاريخ 21 أكتوبر 2026، والمراجعة البشرية معلّقة." data-en="We never claim human verification without a completed manual review. The dataset represents an automated source check as of 21 October 2026, with human review pending.">
+            لا نطلق شارة «تم التحقق بشريًا» دون مراجعة بشرية فعلية مكتملة. البيانات الحالية تمثل فحصًا آليًا للمصادر الرسمية بتاريخ 21 أكتوبر 2026، والمراجعة البشرية معلّقة.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <span class="value-number">02</span>
+          <h2 data-ar="المصدر الرسمي هو المرجع" data-en="Official Source Authority">المصدر الرسمي هو المرجع</h2>
+          <p data-ar="كل فرصة ترتبط برابط رسمي مباشر إلى الجهة المانحة أو المنصة التعليمية. الشروط والأهلية والمواعيد النهائية تُحددها شروط كل برنامج لدى جهته." data-en="Every opportunity directly links to the provider’s official portal. Final eligibility, deadlines, and funding coverage are strictly determined by each programme's official terms.">
+            كل فرصة ترتبط برابط رسمي مباشر إلى الجهة المانحة أو المنصة التعليمية. الشروط والأهلية والمواعيد النهائية تُحددها شروط كل برنامج لدى جهته.
+          </p>
+        </article>
+
+        <article class="value-card">
+          <span class="value-number">03</span>
+          <h2 data-ar="فصل الدراسة عن الشهادة" data-en="Study vs. Certificate">فصل الدراسة عن الشهادة</h2>
+          <p data-ar="مجانية الدراسة مؤكدة للدورات التقنية العشر، ولكن مجانية الشهادة موثقة بشكل منفصل. لا ندعي مجانية شهادة edX المدفوعة، ولا نروج لشارات إتمام كشهادات مهنية." data-en="Free course access is confirmed across all ten courses, while certificate costs are verified separately. We never conflate free audit learning with paid verified certificates.">
+            مجانية الدراسة مؤكدة للدورات التقنية العشر، ولكن مجانية الشهادة موثقة بشكل منفصل. لا ندعي مجانية شهادة edX المدفوعة، ولا نروج لشارات إتمام كشهادات مهنية.
+          </p>
+        </article>
+      </section>
+
+      <!-- Journey Steps -->
+      <section class="how-section">
+        <div>
+          <div class="eyebrow subtle">
+            <span data-ar="من الاستكشاف إلى التقديم" data-en="FROM EXPLORATION TO ACTION">من الاستكشاف إلى التقديم</span>
+          </div>
+          <h2 data-ar="ثلاث خطوات بسيطة تبدأ بها." data-en="Three clear steps to begin.">ثلاث خطوات بسيطة تبدأ بها.</h2>
+          <p data-ar="لا تحتاج إلى معرفة كل المسار في يوم واحد. ابدأ بفهم الفرص المتاحة، ثم خذ وقتك في التحضير." data-en="You don’t have to know the entire journey today. Explore the landscape first, then prepare your application steps.">لا تحتاج إلى معرفة كل المسار في يوم واحد. ابدأ بفهم الفرص المتاحة، ثم خذ وقتك في التحضير.</p>
+          <a href="index.html" class="btn btn-primary">
+            <span data-ar="استكشف الفرص الآن" data-en="Start exploring now">استكشف الفرص الآن</span>
+            <svg class="icon flow-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M19 12H5m7-7-7 7 7 7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <ol class="journey-steps">
+          <li>
+            <span>1</span>
+            <div>
+              <h3 data-ar="ابحث وصفّ خياراتك" data-en="Explore & Filter">ابحث وصفّ خياراتك</h3>
+              <p data-ar="استخدم البحث ثنائي اللغة وفلاتر التخصص والمستوى والمكان والمواعيد لتصل إلى الفرص التي تناسبك بدقة." data-en="Use bilingual search and multi-layer filters for field, study level, location, and deadlines to find your match.">استخدم البحث ثنائي اللغة وفلاتر التخصص والمستوى والمكان والمواعيد لتصل إلى الفرص التي تناسبك بدقة.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h3 data-ar="اقرأ التفاصيل واحفظ ما يهمك" data-en="Understand & Shortlist">اقرأ التفاصيل واحفظ ما يهمك</h3>
+              <p data-ar="اطّلع على شروط الأهلية والتمويل والمواعيد الموثقة، واحفظ ما يناسبك في قائمة المفضلة المحلية بمتصفحك." data-en="Review verified eligibility, funding, and closing notes, then save preferred opportunities to your local shortlist.">اطّلع على شروط الأهلية والتمويل والمواعيد الموثقة، واحفظ ما يناسبك في قائمة المفضلة المحلية بمتصفحك.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h3 data-ar="انتقل إلى الجهة الرسمية" data-en="Proceed to Official Source">انتقل إلى الجهة الرسمية</h3>
+              <p data-ar="اتبع الرابط الآمن المباشر إلى بوابة التقديم الرسمية لدى الجهة المانحة أو المنصة التعليمية لإكمال الإجراءات." data-en="Follow verified direct HTTPS links to the official provider application portal to complete your submission.">اتبع الرابط الآمن المباشر إلى بوابة التقديم الرسمية لدى الجهة المانحة أو المنصة التعليمية لإكمال الإجراءات.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Transparency & Privacy Notice -->
+      <aside class="about-notice">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 10v6m0-10v1" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <strong data-ar="الخصوصية والعمل دون اتصال:" data-en="Privacy & Offline Support:">الخصوصية والعمل دون اتصال:</strong>
+          <p data-ar="هذا الموقع لا يجمع أي بيانات شخصية، ولا يستخدم ملفات تتبع أو كوكيز خارجية، ولا يتضمن خادمًا خلفيًا أو نماذج رفع ملفات. يعمل التطبيق بكامل وظائف التصفح والبحث والمفضلة دون اتصال بالإنترنت بعد زيارتك الأولى الناجحة، مع ملاحظة أن زيارة الروابط الخارجية تتطلب اتصالًا بالإنترنت." data-en="This website collects zero personal data, uses no tracking cookies or external CDNs, and has no backend or file upload forms. All browsing, search, and shortlist features work offline after your initial visit, while opening external provider links requires an internet connection.">
+            هذا الموقع لا يجمع أي بيانات شخصية، ولا يستخدم ملفات تتبع أو كوكيز خارجية، ولا يتضمن خادمًا خلفيًا أو نماذج رفع ملفات. يعمل التطبيق بكامل وظائف التصفح والبحث والمفضلة دون اتصال بالإنترنت بعد زيارتك الأولى الناجحة، مع ملاحظة أن زيارة الروابط الخارجية تتطلب اتصالًا بالإنترنت.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none">
+            <path d="M10 31V18a10 10 0 0 1 20 0v13M17 31V19a3 3 0 0 1 6 0v12M7 32h26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="30" cy="9" r="4" fill="#D6AE6A" stroke="#55318A" stroke-width="2"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong data-ar="بوّابة الفرص ٢" data-en="Opportunity Gateway 2">بوّابة الفرص ٢</strong>
+          <small data-ar="لكل طموح، بداية." data-en="Every ambition has a beginning.">لكل طموح، بداية.</small>
+        </span>
+      </a>
+
+      <nav class="footer-nav" aria-label="روابط التذييل" data-label-ar="روابط التذييل" data-label-en="Footer navigation">
+        <a href="index.html" data-ar="اكتشف الفرص" data-en="Explore">اكتشف الفرص</a>
+        <a href="favorites.html" data-ar="المفضلة" data-en="Saved">المفضلة</a>
+        <a href="about.html" data-ar="عن البوابة" data-en="About">عن البوابة</a>
+      </nav>
+
+      <p class="footer-motto">
+        <span data-ar="اصنع خطوتك التالية." data-en="Make your next move.">اصنع خطوتك التالية.</span>
+        <span aria-hidden="true">✦</span>
+      </p>
+    </div>
+
+    <div class="container footer-bottom">
+      <span data-ar="بوّابة الفرص · النسخة الثانية (2026)" data-en="Opportunity Gateway · Second Edition (2026)">بوّابة الفرص · النسخة الثانية (2026)</span>
+      <span data-ar="المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط." data-en="Official sources are the final reference for details, deadlines, and terms.">المصادر الرسمية هي المرجع النهائي للتفاصيل والمواعيد والشروط.</span>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

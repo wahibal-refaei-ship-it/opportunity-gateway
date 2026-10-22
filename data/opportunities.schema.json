@@ -1,0 +1,863 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:opportunity-gateway2:opportunities:2.0.0",
+  "title": "Opportunity Gateway 2 — publication data contract",
+  "$comment": "The bundled Node validator performs explicit checks for this contract, not general JSON Schema evaluation. It additionally checks calendar dates, IANA zones, counts, unique IDs/slugs, origin identity, and HTTPS URLs without credentials. Neither schema nor structural validation checks whether remote pages are live.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "meta",
+    "opportunities"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "project",
+        "schema_version",
+        "prepared_at",
+        "record_count",
+        "scholarship_count",
+        "course_count",
+        "disclaimer"
+      ],
+      "properties": {
+        "project": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "const": "2.0.0"
+        },
+        "prepared_at": {
+          "$ref": "#/$defs/date"
+        },
+        "record_count": {
+          "const": 20
+        },
+        "scholarship_count": {
+          "const": 10
+        },
+        "course_count": {
+          "const": 10
+        },
+        "disclaimer": {
+          "$ref": "#/$defs/bilingual"
+        }
+      }
+    },
+    "opportunities": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/opportunity"
+      },
+      "allOf": [
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "const": "scholarship"
+              }
+            }
+          },
+          "minContains": 10,
+          "maxContains": 10
+        },
+        {
+          "contains": {
+            "type": "object",
+            "required": [
+              "type"
+            ],
+            "properties": {
+              "type": {
+                "const": "course"
+              }
+            }
+          },
+          "minContains": 10,
+          "maxContains": 10
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "bilingual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ar",
+        "en"
+      ],
+      "properties": {
+        "ar": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "nonemptyStringArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "$comment": "The Node checker also rejects impossible calendar dates."
+    },
+    "httpsUrl": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://[^\\s\\\\/?#@]+(?:[/?#][^\\s\\\\]*)?$",
+      "$comment": "The Node checker parses URL syntax and disallows username/password. This is not a reachability or public-host check."
+    },
+    "time": {
+      "type": "string",
+      "pattern": "^(?:[01][0-9]|2[0-3]):[0-5][0-9]$"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?:UTC|GMT|[A-Za-z_+-]+(?:/[A-Za-z0-9_+.-]+)+)$",
+      "$comment": "The Node checker verifies support via Intl.DateTimeFormat."
+    },
+    "requirements": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ar",
+        "en"
+      ],
+      "properties": {
+        "ar": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        },
+        "en": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "opens_at",
+        "closes_at",
+        "closes_time",
+        "timezone",
+        "note"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "fixed",
+            "course_specific",
+            "programme_specific",
+            "none"
+          ]
+        },
+        "opens_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "closes_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "closes_time": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/time"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timezone": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/timezone"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "note": {
+          "$ref": "#/$defs/bilingual"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "fixed"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "closes_at": {
+                "$ref": "#/$defs/date"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "none"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "opens_at": {
+                "type": "null"
+              },
+              "closes_at": {
+                "type": "null"
+              },
+              "closes_time": {
+                "type": "null"
+              },
+              "timezone": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "closes_at": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "closes_at"
+            ]
+          },
+          "then": {
+            "properties": {
+              "closes_time": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "closes_time": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "closes_time"
+            ]
+          },
+          "then": {
+            "properties": {
+              "closes_at": {
+                "$ref": "#/$defs/date"
+              },
+              "timezone": {
+                "$ref": "#/$defs/timezone"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "humanReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewed_at",
+        "reviewer"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "pending",
+            "complete"
+          ]
+        },
+        "reviewed_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/date"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "reviewer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "pending"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewed_at": {
+                "type": "null"
+              },
+              "reviewer": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "complete"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "reviewed_at": {
+                "$ref": "#/$defs/date"
+              },
+              "reviewer": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "supports"
+      ],
+      "properties": {
+        "url": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "supports": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "original_id"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "retained_original",
+            "new_course"
+          ]
+        },
+        "original_id": {
+          "anyOf": [
+            {
+              "enum": [
+                "opp-001",
+                "opp-002",
+                "opp-004",
+                "opp-005",
+                "opp-006",
+                "opp-007",
+                "opp-009",
+                "opp-010",
+                "opp-011",
+                "opp-018"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "retained_original"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "original_id": {
+                "enum": [
+                  "opp-001",
+                  "opp-002",
+                  "opp-004",
+                  "opp-005",
+                  "opp-006",
+                  "opp-007",
+                  "opp-009",
+                  "opp-010",
+                  "opp-011",
+                  "opp-018"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "new_course"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "then": {
+            "properties": {
+              "original_id": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mark",
+        "color"
+      ],
+      "properties": {
+        "mark": {
+          "type": "string",
+          "minLength": 1
+        },
+        "color": {
+          "enum": [
+            "violet",
+            "gold",
+            "teal",
+            "rose"
+          ]
+        }
+      }
+    },
+    "duration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "unit",
+        "label"
+      ],
+      "properties": {
+        "value": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "enum": [
+            "hours",
+            "curriculum_weeks"
+          ]
+        },
+        "label": {
+          "$ref": "#/$defs/bilingual"
+        }
+      }
+    },
+    "certificate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "label",
+        "details",
+        "source_url"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "free",
+            "not_stated",
+            "paid",
+            "none"
+          ]
+        },
+        "label": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "details": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "source_url": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/httpsUrl"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "course": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "free_access",
+        "content_languages",
+        "language_scope",
+        "duration",
+        "certificate",
+        "subfield",
+        "subfield_label"
+      ],
+      "properties": {
+        "free_access": {
+          "const": true
+        },
+        "content_languages": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        },
+        "language_scope": {
+          "const": "verified_subset"
+        },
+        "duration": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/duration"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "certificate": {
+          "$ref": "#/$defs/certificate"
+        },
+        "subfield": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subfield_label": {
+          "$ref": "#/$defs/bilingual"
+        }
+      }
+    },
+    "opportunity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "slug",
+        "type",
+        "title",
+        "provider",
+        "country",
+        "summary",
+        "description",
+        "eligibility",
+        "funding",
+        "status_scope",
+        "notes",
+        "levels",
+        "fields",
+        "status",
+        "deadline",
+        "requirements",
+        "source_url",
+        "application_url",
+        "verified_at",
+        "verification_method",
+        "human_review",
+        "evidence",
+        "origin",
+        "display",
+        "course"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(?:opp|course)-[0-9]{3}$"
+        },
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "type": {
+          "enum": [
+            "scholarship",
+            "course"
+          ]
+        },
+        "title": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "provider": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "country": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "summary": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "description": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "eligibility": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "funding": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "status_scope": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "notes": {
+          "$ref": "#/$defs/bilingual"
+        },
+        "levels": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        },
+        "fields": {
+          "$ref": "#/$defs/nonemptyStringArray"
+        },
+        "status": {
+          "enum": [
+            "open",
+            "closed",
+            "upcoming",
+            "under_review",
+            "self_paced"
+          ]
+        },
+        "deadline": {
+          "$ref": "#/$defs/deadline"
+        },
+        "requirements": {
+          "$ref": "#/$defs/requirements"
+        },
+        "source_url": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "application_url": {
+          "$ref": "#/$defs/httpsUrl"
+        },
+        "verified_at": {
+          "$ref": "#/$defs/date"
+        },
+        "verification_method": {
+          "const": "automated_official_source_review"
+        },
+        "human_review": {
+          "$ref": "#/$defs/humanReview"
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/evidence"
+          }
+        },
+        "origin": {
+          "$ref": "#/$defs/origin"
+        },
+        "display": {
+          "$ref": "#/$defs/display"
+        },
+        "course": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/course"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "scholarship"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "id": {
+                "enum": [
+                  "opp-001",
+                  "opp-002",
+                  "opp-004",
+                  "opp-005",
+                  "opp-006",
+                  "opp-007",
+                  "opp-009",
+                  "opp-010",
+                  "opp-011",
+                  "opp-018"
+                ]
+              },
+              "course": {
+                "type": "null"
+              },
+              "origin": {
+                "properties": {
+                  "kind": {
+                    "const": "retained_original"
+                  },
+                  "original_id": {
+                    "enum": [
+                      "opp-001",
+                      "opp-002",
+                      "opp-004",
+                      "opp-005",
+                      "opp-006",
+                      "opp-007",
+                      "opp-009",
+                      "opp-010",
+                      "opp-011",
+                      "opp-018"
+                    ]
+                  }
+                }
+              },
+              "status": {
+                "enum": [
+                  "open",
+                  "closed",
+                  "upcoming",
+                  "under_review"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "course"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "id": {
+                "pattern": "^course-[0-9]{3}$"
+              },
+              "course": {
+                "$ref": "#/$defs/course"
+              },
+              "origin": {
+                "properties": {
+                  "kind": {
+                    "const": "new_course"
+                  },
+                  "original_id": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+Test ID: NAV-01
+Date: 2026-10-21
+Scope: Direct URL access, missing query param, invalid ID, and query encoding
+Result: PASS
+
+Details:
+1. Valid direct access: `detail.html?id=opp-001`
+   - Successfully renders Open Doors Russia scholarship details directly upon page load.
+2. Missing ID: `detail.html` (no `?id=`)
+   - Safely renders "لم نعثر على هذه الفرصة" error state with back-to-explore button.
+3. Unknown ID: `detail.html?id=opp-999`
+   - Safely renders not-found state without DOM exception or broken layout.
+4. XSS probe in query parameter: `detail.html?id=%3Cscript%3Ealert(1)%3C/script%3E`
+   - Treated as unknown string ID, not parsed or inserted as raw HTML, renders safe error state.

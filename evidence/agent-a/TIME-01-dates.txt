@@ -1,0 +1,13 @@
+Test ID: TIME-01
+Date: 2026-10-21
+Scope: Deadline range filters (14 and 30 days)
+Result: PASS
+
+Details:
+1. As-of reference date: 2026-10-21
+2. 14-day filter:
+   - Matches: opp-001 (Open Doors Russia) with fixed deadline 2026-11-01 (11 calendar days remaining).
+   - Correctly excludes past deadlines, open-ended courses, and programme-specific deadlines without a single global closing date.
+3. 30-day filter:
+   - Matches: opp-001 (11 days remaining).
+4. No synthetic 23:59 hour or arbitrary timezone was assumed for dates without explicit time documentation.
